@@ -1,0 +1,42 @@
+.gotoTop {
+  position: fixed;
+  display: block;
+  box-sizing: border-box;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  bottom: 0;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: var(--skin-color);
+  bottom: 15px;
+  right: -100px;
+  cursor: pointer;
+  transition: right 0.3s ease;
+}
+
+.gotoTop::before,
+.gotoTop::after {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 4px;
+  background: #fff;
+  top: 16px;
+}
+
+.gotoTop::before {
+  left: 18px;
+  transform: rotate(45deg);
+}
+
+.gotoTop::after {
+  right: 18px;
+  transform: rotate(-45deg);
+}
+
+
+button.visible {
+  right: 20px;
+}

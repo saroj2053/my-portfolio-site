@@ -1,0 +1,116 @@
+.projectCard {
+  /* background-color: var(--bg-black-100); */
+  /* border: 1px solid var(--bg-black-50); */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover {
+  /* transform: scale(1.02); */
+  background-color: var(--bg-black-100);
+}
+
+.projectCard__contents {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  min-height: 675px;
+}
+
+.projectCard__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+
+.projectCard__details {
+  flex: 1;
+  margin: 2rem 0;
+}
+
+.projectCard__title {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  color: var(--text-black-900);
+}
+
+.projectCard__description {
+  font-size: 0.875rem;
+  color: var(--text-black-700);
+}
+
+.projectCard__techUsed {
+  min-height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.projectCard__techUsed .appliedTechs {
+  list-style: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.projectCard__techUsed .appliedTech {
+  color: #fff;
+  padding: 0 0.875rem;
+  border-radius: 999rem;
+  background: var(--skin-color);
+}
+
+.project__cta-buttons {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project__cta-buttons .showCode__btn,
+.project__cta-buttons .liveDemo__btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--skin-color);
+  border-radius: 999rem;
+  transition: background 0.3s ease;
+}
+
+.project__cta-buttons .showCode__btn:hover,
+.project__cta-buttons .liveDemo__btn:hover {
+  background: var(--skin-color);
+}
+
+.project__cta-buttons .showCode__btn:hover > a,
+.project__cta-buttons .liveDemo__btn:hover > a {
+  color: #fff;
+}
+
+.showCode__btn .githubBtn,
+.liveDemo__btn .liveDemoBtn {
+  text-decoration: none;
+  color: var(--text-black-700);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.project__moreInfo-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.project__moreInfo-btn .moreInfoBtn {
+  text-decoration: none;
+  color: var(--text-black-700);
+  font-weight: 500;
+}
+
+.project__moreInfo-btn .moreInfoBtn:hover {
+  text-decoration: underline;
+  color: var(--skin-color);
+}

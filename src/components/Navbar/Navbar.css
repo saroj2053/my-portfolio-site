@@ -1,0 +1,171 @@
+.navbar {
+  padding: 10px 0;
+  width: 100%;
+  background: var(--bg-black-100);
+  color: var(--text-black-900);
+  position: fixed;
+  z-index: 999;
+}
+
+.navbarContentsContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__brand > img {
+  width: 50px;
+  object-fit: contain;
+  filter: drop-shadow(0px 0px 15px var(--skin-color));
+}
+
+.nav__brand-title {
+  font-size: 2rem;
+  font-family: "Cedarville Cursive", cursive;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--skin-color);
+}
+
+/* .nav__brand-title::after {
+  content: "";
+  display: block;
+  border: 3px solid var(--skin-color);
+} */
+
+.navbar__middle {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar__right {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.875rem;
+}
+
+.nav-link {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.nav-link > a {
+  text-decoration: none;
+  color: var(--text-black-900);
+  padding: 0.5rem 1rem;
+  border-radius: 999rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-link > a.active,
+.nav-link > a:hover {
+  color: var(--skin-color);
+  filter: drop-shadow(0px 0px 15px var(--skin-color));
+}
+
+.nav-link > a:hover::after,
+.nav-link > a.active::after {
+  content: ".";
+  display: block;
+  font-size: 4rem;
+  color: var(--skin-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.theme-toggler {
+  border: 1px solid var(--bg-black-50);
+  background: var(--bg-black-100);
+  padding: 0.25rem;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.theme-toggler > svg {
+  cursor: pointer;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+.theme-toggler:hover {
+  background: var(--skin-color);
+  color: #fff;
+}
+
+.nav__hamburgerMenuToggleIcons {
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.nav__hamburgerMenuToggleIcons .menuIcon,
+.nav__hamburgerMenuToggleIcons .closeIcon {
+  display: flex;
+  font-size: 1.75rem;
+  display: none;
+}
+
+.nav__hamburgerMenuToggleIcons:hover {
+  background: var(--skin-color);
+  color: #fff;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 950px) {
+  .navbar__middle {
+    display: none;
+  }
+
+  .nav__hamburgerMenuToggleIcons .menuIcon,
+  .nav__hamburgerMenuToggleIcons .closeIcon {
+    display: flex;
+  }
+
+  .navbar__middle {
+    display: block;
+  }
+
+  .navbar__middle .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    position: absolute;
+    top: 100%;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    color: var(--text-black-900);
+    padding: 10px 20px;
+    z-index: 10;
+    transition: right 0.3s ease;
+  }
+
+  .navbar__middle.open .nav-links {
+    right: 0;
+  }
+}

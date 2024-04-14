@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+body.theme-dark {
+  --bg-black-900: #151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #393939;
+  --text-black-900: #ffffff;
+  --text-black-700: #e9e9e9;
+}
+
+body.skin1 {
+  --skin-color: #37b182;
+}
+
+body.skin2 {
+  --skin-color: #1854b4;
+}
+
+body.skin3 {
+  --skin-color: #f021b2;
+}
+
+body.skin4 {
+  --skin-color: #ec1839;
+}
+
+body.skin5 {
+  --skin-color: #fa5b0f;
+}
+
+body.skin6 {
+  --skin-color: #997950;
+}
+
+body.skin7 {
+  --skin-color: #de73ff;
+}
+
+body.skin8 {
+  --skin-color: #e4cd05;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
