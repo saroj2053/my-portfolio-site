@@ -1,4 +1,5 @@
-import solarCalculite1 from "../../assets/project-images/solar-calculite/solarCalculite1.png";
+import solarCalculite1 from "../../assets/project-images/solarCalculite2.png";
+import rateMyUni from "../../assets/project-images/ratemyuni.png";
 import movixImage from "../../assets/project-images/movix_website.png";
 import linkedInImage from "../../assets/project-images/linkedin-website.png";
 import chatAppImage from "../../assets/project-images/chat-app.png";
@@ -19,7 +20,7 @@ const projects = [
     image: linkedInImage,
     name: "Linkedin Clone",
     description: "A web based application that provides basic features of the well known Linkedin application",
-    techUsed: ["Styled Components", "API", "CSS", "HTML"],
+    techUsed: ["React", "NodeJs", "Raw CSS", "HTML", "MongoDB"],
     githubUrl: "",
     deployedUrl: ""
   },
@@ -36,7 +37,7 @@ const projects = [
     id: 4,
     image: chatAppImage,
     name: "MERN Chat App",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla repudiandae voluptatibus laboriosam vitae. Omnis sint asperiores, unde eius animi repellendus!",
+    description: "Built using the MERN (MongoDB, Express.js, React, Node.js) stack, this intuitive application enables real-time messaging in the textual format.",
     techUsed: ["Nodejs", "MongoDB", "ReactJS", "Chakra UI", "Zustand"],
     githubUrl: "https://github.com/saroj2053/mern-chat-app",
     deployedUrl: "https://chatapp-t6jh.onrender.com/"
@@ -52,23 +53,22 @@ const projects = [
   },
   {
     id: 6,
-    image: "http://source.unsplash.com/random/300x300?dormitory",
+    image: rateMyUni,
     name: "Rate My Uni",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla repudiandae voluptatibus laboriosam vitae. Omnis sint asperiores, unde eius animi repellendus!",
-    techUsed: ["Nodejs", "Express", "MongoDB", "React", "Redux", "Tailwind CSS"],
-    githubUrl: "",
-    deployedUrl: ""
+    description: "Rate My Uni is a comprehensive platform that allows students to explore and review universities inside Nepal, providing valuable insights into campus life, academic programs, faculty quality, and more.",
+    techUsed: ["Nodejs", "Express", "MongoDB", "React", "Tailwind CSS"],
+    githubUrl: "https://github.com/saroj2053/ratemyuni",
+    deployedUrl: "https://ratemyuni-3vzl.onrender.com/"
   },
-  {
-    id: 7,
-    image: "http://source.unsplash.com/random/300x300?glacier",
-    name: "Ecommerce App",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla repudiandae voluptatibus laboriosam vitae. Omnis sint asperiores, unde eius animi repellendus!",
-    techUsed: ["Nodejs", "Express.js", "MongoDB", "React", "Redux", "Stripe Api"],
-    githubUrl: "",
-    deployedUrl: ""
-  },
-  
+  // {
+  //   id: 7,
+  //   image: "http://source.unsplash.com/random/300x300?glacier",
+  //   name: "Ecommerce App",
+  //   description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla repudiandae voluptatibus laboriosam vitae. Omnis sint asperiores, unde eius animi repellendus!",
+  //   techUsed: ["Nodejs", "Express.js", "MongoDB", "React", "Redux", "Stripe Api"],
+  //   githubUrl: "",
+  //   deployedUrl: ""
+  // },
 
 ]
 

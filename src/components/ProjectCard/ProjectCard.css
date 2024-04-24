@@ -41,6 +41,7 @@
 .projectCard__description {
   font-size: 0.875rem;
   color: var(--text-black-700);
+  text-align: justify;
 }
 
 .projectCard__techUsed {
