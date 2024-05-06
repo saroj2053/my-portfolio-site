@@ -10,37 +10,49 @@ const projects = [
     id: 1,
     image: campusflowImage,
     name: "CampusFlow - for Across Universities",
-    description: "A web application for ACROSS, facilitating seamless access to universities across nine different countries with features like compare modules, transfer of credits etc.",
-    techUsed: ["Python", "Django", "React", "MySql", "Blazegraph", "SparQL","Bootstrap"],
+    description:
+      "A web application for ACROSS, facilitating seamless access to universities across nine different countries with features like compare modules, transfer of credits etc.",
+    techUsed: [
+      "Python",
+      "Django",
+      "React",
+      "MySql",
+      "Blazegraph",
+      "SparQL",
+      "Bootstrap",
+    ],
     githubUrl: "",
-    deployedUrl: "https://campusflow-frontend-navy.vercel.app/"
+    deployedUrl: "https://campusflow-frontend-navy.vercel.app/",
   },
   {
     id: 2,
     image: linkedInImage,
     name: "Linkedin Clone",
-    description: "A web based application that provides basic features of the well known Linkedin application",
+    description:
+      "A web based application that provides basic features of the well known Linkedin application",
     techUsed: ["React", "NodeJs", "Raw CSS", "HTML", "MongoDB"],
     githubUrl: "",
-    deployedUrl: ""
+    deployedUrl: "",
   },
   {
     id: 3,
     image: solarCalculite1,
     name: "Solar Calculite - a solar pv estimator",
-    description: "A MERN stack application for estimating the amount of electricity produced by the photovoltaic products.",
+    description:
+      "A MERN stack application for estimating the amount of electricity produced by the photovoltaic products.",
     techUsed: ["HTML", "CSS", "React", "NodeJs", "MongoDB"],
     githubUrl: "https://github.com/saroj2053/solarcalculite-frontend",
-    deployedUrl: "https://solar-calculite.netlify.app/"
+    deployedUrl: "https://solar-calculite.netlify.app/",
   },
   {
     id: 4,
     image: chatAppImage,
     name: "MERN Chat App",
-    description: "Built using the MERN (MongoDB, Express.js, React, Node.js) stack, this intuitive application enables real-time messaging in the textual format.",
+    description:
+      "Built using the MERN (MongoDB, Express.js, React, Node.js) stack, this intuitive application enables real-time messaging in the textual format.",
     techUsed: ["Nodejs", "MongoDB", "ReactJS", "Chakra UI", "Zustand"],
     githubUrl: "https://github.com/saroj2053/mern-chat-app",
-    deployedUrl: "https://chatapp-t6jh.onrender.com/"
+    deployedUrl: "https://chatapp-t6jh.onrender.com/",
   },
   {
     id: 5,
@@ -49,27 +61,18 @@ const projects = [
     description: "Providing users with the platform to seek for tmdb movies",
     techUsed: ["HTML", "CSS", "React", "NodeJs", "MongoDB", "TMDB API"],
     githubUrl: "https://github.com/saroj2053/movix-frontend",
-    deployedUrl: "https://movix2053.netlify.app/"
+    deployedUrl: "https://movix2053.netlify.app/",
   },
   {
     id: 6,
     image: rateMyUni,
     name: "Rate My Uni",
-    description: "Rate My Uni is a comprehensive platform that allows students to explore and review universities inside Nepal, providing valuable insights into campus life, academic programs, faculty quality, and more.",
+    description:
+      "Rate My Uni is a comprehensive platform that allows students to explore and review universities inside Nepal, providing valuable insights into campus life, academic programs, faculty quality, and more.",
     techUsed: ["Nodejs", "Express", "MongoDB", "React", "Tailwind CSS"],
     githubUrl: "https://github.com/saroj2053/ratemyuni",
-    deployedUrl: "https://ratemyuni-3vzl.onrender.com/"
+    deployedUrl: "https://ratemyuni-3vzl.onrender.com/",
   },
-  // {
-  //   id: 7,
-  //   image: "http://source.unsplash.com/random/300x300?glacier",
-  //   name: "Ecommerce App",
-  //   description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla repudiandae voluptatibus laboriosam vitae. Omnis sint asperiores, unde eius animi repellendus!",
-  //   techUsed: ["Nodejs", "Express.js", "MongoDB", "React", "Redux", "Stripe Api"],
-  //   githubUrl: "",
-  //   deployedUrl: ""
-  // },
-
-]
+];
 
 export default projects;

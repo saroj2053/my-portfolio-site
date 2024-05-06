@@ -65,7 +65,7 @@
   color: var(--text-black-900);
 }
 
-.home__right .home__profileName {
+.home__middle .home__profileName {
   font-family: "Inter", sans-serif;
   font-size: 3rem;
   color: var(--skin-color);
@@ -96,10 +96,10 @@
 }
 
 .home__profileImage {
-  width: 5000px;
-  height: auto;
-  /* filter: drop-shadow(0px 0px 22px var(--skin-color)); */
-  border: 1px solid var(--bg-black-50);
+  /* width: 5000px;
+  height: auto; */
+  filter: drop-shadow(0px 0px 22px var(--skin-color));
+  /* border: 1px solid var(--bg-black-50); */
   max-width: 25rem;
   aspect-ratio: 1 / 1;
   display: flex;
@@ -127,8 +127,8 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 80%;
-  left: 80%;
+  top: 90%;
+  left: 75%;
   transform: translate(-50%);
 }
 

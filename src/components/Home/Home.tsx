@@ -57,7 +57,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="home__right">
+        <div className="home__middle">
           <div className="home__myDetails">
             <h1 className="home__profileHeading">Hi, I am</h1>
             <h2 className="home__profileName">Saroj Sah.</h2>
@@ -86,12 +86,14 @@ const Home = () => {
               </span>
             </div>
           </div>
+        </div>
+        <div className="home__right">
           <div className="home__myImage">
             <div className="home__profileImage">
               <img
                 style={{
-                  width: "400px",
-                  height: "400px",
+                  width: "300px",
+                  height: "300px",
                   objectFit: "cover",
                   filter: "grayscale(40%)",
                 }}
