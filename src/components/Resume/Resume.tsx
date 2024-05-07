@@ -15,7 +15,8 @@ const Resume = () => {
             </h4>
             <p className="resume__date text-lg">10/2022 - Present</p>
             <p className="resume__description text-sm">
-              Focus: Software and Web Development
+              Relevant Coursework: Software Engineering, Database Management,
+              XML, Current Trends in Web Engineering, Cloud and Web Applications
             </p>
           </div>
           <div className="resume__item">
@@ -30,7 +31,9 @@ const Resume = () => {
             </h4>
             <p className="resume__date text-lg">09/2016 - 11/2020</p>
             <p className="resume__description text-sm">
-              Focus: Software Engineering, Machine Learning
+              Relevant Coursework: Fundamental of Computer Programming and IT,
+              Web Technologies, Design of Data Algorithms, Software Engineering,
+              Database Management, Artificial Intelligence, Machine Learning
             </p>
           </div>
         </div>
@@ -47,8 +50,8 @@ const Resume = () => {
             <div className="resume__description text-sm">
               <ul style={{ paddingLeft: "30px" }}>
                 <li>
-                  Technology Stack: HTML, CSS, Javascript, ReactJs, Nodejs,
-                  express, MongoDB
+                  Technology Stack: HTML, CSS, Javascript, Nodejs, express,
+                  MongoDB, ReactJs
                 </li>
               </ul>
             </div>
@@ -60,7 +63,7 @@ const Resume = () => {
             <h4 className="resume-employment__subtitle text-lg">
               Contentiolabs Pvt. Ltd
             </h4>
-            <p className="resume__date text-lg">02/2020 - 06/2020</p>
+            <p className="resume__date text-lg">04/2020 - 07/2020</p>
             <div className="resume__description text-sm">
               <ul style={{ paddingLeft: "30px" }}>
                 <li>

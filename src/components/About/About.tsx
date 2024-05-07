@@ -105,10 +105,10 @@ const About = ({ title }: { title: string }) => {
               <figure className="figure">
                 I am a{" "}
                 <span className="about__profile-designation">
-                  Full Stack Web Developer
+                  Full Stack Web Developer.
                 </span>
-                . I like to code and write relevant blogs related to coding
-                stuffs.
+                {/* . I like to code and write relevant blogs related to coding
+                stuffs. */}
                 <figcaption className="captionText">
                   - Saroj Sah,
                   <cite>
