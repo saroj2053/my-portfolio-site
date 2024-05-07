@@ -36,28 +36,27 @@ const Home = () => {
   });
   return (
     <Element className="home" name="home">
+      <div className="home__social-icons">
+        <div className="github__icon">
+          <a href="https://github.com/saroj2053" target="_blank">
+            <FaGithub />
+          </a>
+        </div>
+        <div className="linkedin__icon">
+          <a
+            href="https://www.linkedin.com/in/saroj-sah-139922124/"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+        <div className="x__icon">
+          <FaXTwitter />
+        </div>
+      </div>
+
       <div className="home__contents">
         <div className="home__left">
-          <div className="home__social-icons">
-            <div className="github__icon">
-              <a href="https://github.com/saroj2053" target="_blank">
-                <FaGithub />
-              </a>
-            </div>
-            <div className="linkedin__icon">
-              <a
-                href="https://www.linkedin.com/in/saroj-sah-139922124/"
-                target="_blank"
-              >
-                <FaLinkedin />
-              </a>
-            </div>
-            <div className="x__icon">
-              <FaXTwitter />
-            </div>
-          </div>
-        </div>
-        <div className="home__middle">
           <div className="home__myDetails">
             <h1 className="home__profileHeading">Hi, I am</h1>
             <h2 className="home__profileName">Saroj Sah.</h2>
