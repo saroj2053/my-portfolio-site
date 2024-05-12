@@ -13,12 +13,14 @@
   --bg-black-50: #e8dfec;
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
+  --bg-transition: background 0.8s ease-in-out;
 }
 
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-size: 16px;
+  transition: all 2s ease, color 2s ease;
 }
 
 body.theme-dark {
@@ -27,6 +29,7 @@ body.theme-dark {
   --bg-black-50: #393939;
   --text-black-900: #ffffff;
   --text-black-700: #e9e9e9;
+  transition-delay: 2s;
 }
 
 body.skin1 {

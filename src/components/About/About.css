@@ -1,6 +1,7 @@
 .about {
   background: var(--bg-black-900);
   padding-top: 7rem;
+  transition: var(--bg-transition);
 }
 
 .about__title {
@@ -106,7 +107,7 @@
 
 .tech {
   color: var(--skin-color);
-  width: 20%;
+  width: 22%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -120,6 +121,24 @@
 
 .tech:hover {
   transform: scale(1.06);
+}
+
+@media screen and (max-width: 1259px) {
+  .tech {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 929px) {
+  .tech {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .tech {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {

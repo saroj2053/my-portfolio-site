@@ -125,7 +125,7 @@ const Home = () => {
             duration={duration}
             activeClass="active"
           >
-            Let's Begin
+            Get Started
             <span className="icon-wrapper">
               <HiMiniArrowDownRight className="arrow-icon" />
             </span>

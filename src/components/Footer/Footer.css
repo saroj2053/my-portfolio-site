@@ -1,6 +1,7 @@
 .footer {
   padding: 30px 0;
   background: var(--bg-black-100);
+  transition: var(--bg-transition);
 }
 
 .footer-items {

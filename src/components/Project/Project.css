@@ -1,6 +1,7 @@
 .project {
   background: var(--bg-black-900);
   padding-top: 7rem;
+  transition: var(--bg-transition);
 }
 
 .project__title {
