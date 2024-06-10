@@ -4,10 +4,29 @@ import movixImage from "../../assets/project-images/movix_website.png";
 import linkedInImage from "../../assets/project-images/linkedin-website.png";
 import chatAppImage from "../../assets/project-images/chat-app.png";
 import campusflowImage from "../../assets/project-images/campusflow-website.png";
+import sarlahiMarktImage from "../../assets/project-images/sarlahimarkt-image.png";
+import stronicsImage from "../../assets/project-images/stronics-image.png";
 
 const projects = [
   {
     id: 1,
+    image: sarlahiMarktImage,
+    name: "SarlahiMarkt - Local Online Marketplace",
+    description: "",
+    techUsed: [
+      "Javascript",
+      "Nodejs",
+      "Expressjs",
+      "MongoDB",
+      "React",
+      "Redux",
+      "TailwindCSS",
+    ],
+    githubUrl: "",
+    deployedUrl: "https://campusflow-frontend-navy.vercel.app/",
+  },
+  {
+    id: 2,
     image: campusflowImage,
     name: "CampusFlow - for Across Universities",
     description:
@@ -25,7 +44,7 @@ const projects = [
     deployedUrl: "https://campusflow-frontend-navy.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     image: linkedInImage,
     name: "Linkedin Clone",
     description:
@@ -35,7 +54,7 @@ const projects = [
     deployedUrl: "",
   },
   {
-    id: 3,
+    id: 4,
     image: solarCalculite1,
     name: "Solar Calculite - a solar pv estimator",
     description:
@@ -45,7 +64,7 @@ const projects = [
     deployedUrl: "https://solar-calculite.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     image: chatAppImage,
     name: "MERN Chat App",
     description:
@@ -55,7 +74,7 @@ const projects = [
     deployedUrl: "https://chatapp-t6jh.onrender.com/",
   },
   {
-    id: 5,
+    id: 6,
     image: movixImage,
     name: "Movix - a platform to view tmdb movies",
     description: "Providing users with the platform to seek for tmdb movies",
@@ -64,7 +83,7 @@ const projects = [
     deployedUrl: "https://movix2053.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     image: rateMyUni,
     name: "Rate My Uni",
     description:
@@ -72,6 +91,22 @@ const projects = [
     techUsed: ["Nodejs", "Express", "MongoDB", "React", "Tailwind CSS"],
     githubUrl: "https://github.com/saroj2053/ratemyuni",
     deployedUrl: "https://ratemyuni-3vzl.onrender.com/",
+  },
+  {
+    id: 8,
+    image: stronicsImage,
+    name: "Stronics - An electronics retail store",
+    description:
+      "A platform that delivers the ultimate experience for shopping all your electronic needs with convenience. This includes the latest in electronics with the highest standards of quality and service tailored for consumers. ",
+    techUsed: [
+      "Nodejs",
+      "Express",
+      "MongoDB",
+      "ejs template engine",
+      "Express Validator",
+    ],
+    githubUrl: "https://github.com/saroj2053/Stronics",
+    deployedUrl: "https://stronics.onrender.com/",
   },
 ];
 
