@@ -67,7 +67,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </a>
           </div>
         </div>
-        <div className="project__moreInfo-btn">
+        {/* <div className="project__moreInfo-btn">
           <a
             className="moreInfoBtn"
             href=""
@@ -75,7 +75,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           >
             More Info
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
