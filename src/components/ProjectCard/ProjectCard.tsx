@@ -1,7 +1,6 @@
 import React from "react";
 import "./ProjectCard.css";
 import { MdArrowOutward } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
 
 interface Project {
   id: number;
@@ -18,17 +17,16 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  const navigate = useNavigate();
-
-  const handleProjectClick = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    id: number
-  ) => {
-    event.preventDefault();
-    navigate(`/projects/${id}`, {
-      state: { project: project },
-    });
-  };
+  // const navigate = useNavigate();
+  // const handleProjectClick = (
+  //   event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+  //   id: number
+  // ) => {
+  //   event.preventDefault();
+  //   navigate(`/projects/${id}`, {
+  //     state: { project: project },
+  //   });
+  // };
 
   return (
     <div key={project.id} className="projectCard">
