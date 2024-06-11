@@ -31,7 +31,11 @@
   font-family: "Cedarville Cursive", cursive;
   cursor: pointer;
   font-weight: 700;
+}
+
+.nav__brand-title span {
   color: var(--skin-color);
+  font-size: 2rem;
 }
 
 /* .nav__brand-title::after {

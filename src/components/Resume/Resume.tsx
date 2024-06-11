@@ -58,12 +58,29 @@ const Resume = () => {
           </div>
           <div className="resume__item">
             <h2 className="resume-employment__title text-lg">
+              WEB DEVELOPER INTERN
+            </h2>
+            <h4 className="resume-employment__subtitle text-lg">
+              Sarobar Technology Pvt. Ltd.
+            </h4>
+            <p className="resume__date text-lg">04/2020 - 10/2020</p>
+            <div className="resume__description text-sm">
+              <ul style={{ paddingLeft: "30px" }}>
+                <li>
+                  Technology Stack: Python, Django, PostgreSQL, HTML, CSS,
+                  Bootstrap, Javascript
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="resume__item">
+            <h2 className="resume-employment__title text-lg">
               DATA ANALYST INTERN
             </h2>
             <h4 className="resume-employment__subtitle text-lg">
               Contentiolabs Pvt. Ltd
             </h4>
-            <p className="resume__date text-lg">04/2020 - 07/2020</p>
+            <p className="resume__date text-lg">01/2020 - 04/2020</p>
             <div className="resume__description text-sm">
               <ul style={{ paddingLeft: "30px" }}>
                 <li>

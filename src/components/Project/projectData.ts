@@ -104,6 +104,7 @@ const projects = [
       "MongoDB",
       "ejs template engine",
       "Express Validator",
+      "Bootstrap",
     ],
     githubUrl: "https://github.com/saroj2053/Stronics",
     deployedUrl: "https://stronics.onrender.com/",

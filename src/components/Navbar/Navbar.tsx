@@ -34,8 +34,9 @@ const Navbar = () => {
           <div className="nav">
             <div className="navbar__left">
               <Link to="/" className="nav__brand" aria-label="Go home">
-                {/* <img src={brandSvg} alt="" /> */}
-                <h1 className="nav__brand-title">Saroj🧑🏻&zwj;💻</h1>
+                <h1 className="nav__brand-title">
+                  Saroj <span>.</span>
+                </h1>
               </Link>
             </div>
             <div className={`navbar__middle ${isNavOpen ? "open" : ""}`}>
