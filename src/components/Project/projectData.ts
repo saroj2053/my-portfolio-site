@@ -12,7 +12,8 @@ const projects = [
     id: 1,
     image: sarlahiMarktImage,
     name: "SarlahiMarkt - Local Online Marketplace",
-    description: "",
+    description:
+      "An ongoing web application that provides user an online platform to undergo shoppng for different ecommerce products. It includes feature such as wishlisting products, rate them on the basis of their usage experience and provide review on the same.",
     techUsed: [
       "Javascript",
       "Nodejs",
@@ -22,8 +23,8 @@ const projects = [
       "Redux",
       "TailwindCSS",
     ],
-    githubUrl: "",
-    deployedUrl: "https://campusflow-frontend-navy.vercel.app/",
+    githubUrl: "https://github.com/saroj2053/sarlahimarkt-frontend",
+    deployedUrl: "https://sarlahimarkt.vercel.app/",
   },
   {
     id: 2,
@@ -59,7 +60,15 @@ const projects = [
     name: "Solar Calculite - a solar pv estimator",
     description:
       "A MERN stack application for estimating the amount of electricity produced by the photovoltaic products.",
-    techUsed: ["HTML", "CSS", "React", "NodeJs", "MongoDB"],
+    techUsed: [
+      "HTML",
+      "CSS",
+      "React",
+      "NodeJs",
+      "MongoDB",
+      "Express",
+      "Bootstrap",
+    ],
     githubUrl: "https://github.com/saroj2053/solarcalculite-frontend",
     deployedUrl: "https://solar-calculite.netlify.app/",
   },

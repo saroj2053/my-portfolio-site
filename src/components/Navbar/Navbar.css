@@ -38,12 +38,6 @@
   font-size: 2rem;
 }
 
-/* .nav__brand-title::after {
-  content: "";
-  display: block;
-  border: 3px solid var(--skin-color);
-} */
-
 .navbar__middle {
   display: flex;
   gap: 2rem;

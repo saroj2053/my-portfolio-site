@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className="navbar__left">
               <Link to="/" className="nav__brand" aria-label="Go home">
                 <h1 className="nav__brand-title">
-                  Saroj <span>.</span>
+                  S.<span>Sah</span>
                 </h1>
               </Link>
             </div>
