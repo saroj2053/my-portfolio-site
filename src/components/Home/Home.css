@@ -70,8 +70,10 @@
 }
 
 .home__left .home__profileName {
-  font-family: "Inter", sans-serif;
-  font-size: 3rem;
+  font-family: "Sacramento", cursive;
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
   color: var(--skin-color);
 }
 
