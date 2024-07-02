@@ -12,6 +12,7 @@ import { SkinContext } from "../../contexts/SkinContext/SkinProvider";
 import React, { useContext, useState } from "react";
 import { MdOutlineSettings } from "react-icons/md";
 import GradientDivider from "../GradientDivider/GradientDivider";
+import Typewriter from "typewriter-effect";
 
 const duration = 500;
 const Home = () => {
@@ -58,32 +59,48 @@ const Home = () => {
       <div className="home__contents">
         <div className="home__left">
           <div className="home__myDetails">
-            <h1 className="home__profileHeading">Hi, I am</h1>
-            <h2 className="home__profileName">Saroj Sah.</h2>
+            <h1 className="home__profileHeading">
+              Hi, I am <span className="home__profileName">Saroj Sah</span>
+            </h1>
+            <div className="home__typoEffect">
+              <span>a</span>
+              <Typewriter
+                options={{
+                  strings: [
+                    "Full Stack Developer",
+                    "UI Developer",
+                    "Content Writer",
+                    "Student",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
+
             <h4 className="home__profileSubHeading">
-              a full stack Web Developer currently based in Chemnitz, Germany.
+              currently based in Chemnitz, Germany.
             </h4>
             <div className="home__profileStatus">
               <span>
                 <FaDiamond />
-              </span>{" "}
-              Currently pursuing master's in web engineering at TU chemnitz
+              </span>
+              Pursuing master's in web engineering at TU chemnitz
             </div>
             <div className="home__profileStatus">
               <span>
                 <FaDiamond />
               </span>
-              Have hands on experience with git, github and web deployments
+              Having hands on experience with git, github and web deployments
             </div>
-            <div className="home__profileStatus">
-              <span>
-                <FaDiamond />
-              </span>{" "}
+            <div className="home__ctaButtons">
               <span className="home__pill">
                 <Pill text="Developer" />
                 <Pill text="Student" />
+                <Pill text="Download CV" />
               </span>
             </div>
+            {/* <a className="home__downloadCV">Download CV</a> */}
           </div>
         </div>
         <div className="home__right">

@@ -34,9 +34,7 @@ const Navbar = () => {
           <div className="nav">
             <div className="navbar__left">
               <Link to="/" className="nav__brand" aria-label="Go home">
-                <h1 className="nav__brand-title">
-                  Saroj<span> Sah.</span>
-                </h1>
+                <h1 className="nav__brand-title">&lt;Saroj/&gt;</h1>
               </Link>
             </div>
             <div className={`navbar__middle ${isNavOpen ? "open" : ""}`}>

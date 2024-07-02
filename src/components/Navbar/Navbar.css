@@ -1,11 +1,12 @@
 .navbar {
-  padding: 10px 0;
   width: 100%;
+  padding: 8px 0;
   background: var(--bg-black-100);
   transition: background 0.8s ease-in-out;
   color: var(--text-black-900);
   position: fixed;
-  z-index: 999;
+  top: 0;
+  z-index: 20;
 }
 
 .navbarContentsContainer {
@@ -27,10 +28,13 @@
 }
 
 .nav__brand-title {
-  font-size: 2rem;
-  font-family: "Sacramento", cursive;
+  font-size: 1.75rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--skin-color);
 }
 
 .nav__brand-title span {

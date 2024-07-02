@@ -11,8 +11,8 @@
   --bg-black-900: #f2f2fc;
   --bg-black-100: #fdf9ff;
   --bg-black-50: #e8dfec;
-  --text-black-900: #302e4d;
-  --text-black-700: #504e70;
+  --text-black-900: #0f172a;
+  --text-black-700: #334155;
   --bg-transition: background 0.8s ease-in-out;
 }
 
@@ -20,15 +20,15 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-size: 16px;
-  transition: all 2s ease, color 2s ease;
+  transition: color 2s ease;
 }
 
 body.theme-dark {
   --bg-black-900: #151515;
   --bg-black-100: #222222;
   --bg-black-50: #393939;
-  --text-black-900: #ffffff;
-  --text-black-700: #e9e9e9;
+  --text-black-900: #f1f5f9;
+  --text-black-700: #cbd5e1;
   transition-delay: 2s;
 }
 
