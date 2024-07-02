@@ -68,3 +68,8 @@ body.skin8 {
   width: 80%;
   margin: 0 auto;
 }
+
+::selection {
+  background: var(--skin-color);
+  color: #fff;
+}
