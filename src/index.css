@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-size: 16px;
   transition: color 2s ease;
@@ -37,7 +37,7 @@ body.skin1 {
 }
 
 body.skin2 {
-  --skin-color: #1854b4;
+  --skin-color: #3b82f6;
 }
 
 body.skin3 {
@@ -45,11 +45,11 @@ body.skin3 {
 }
 
 body.skin4 {
-  --skin-color: #ec1839;
+  --skin-color: #e11d48;
 }
 
 body.skin5 {
-  --skin-color: #fa5b0f;
+  --skin-color: #0ea5e9;
 }
 
 body.skin6 {
@@ -61,7 +61,7 @@ body.skin7 {
 }
 
 body.skin8 {
-  --skin-color: #e4cd05;
+  --skin-color: #eab308;
 }
 
 .container {

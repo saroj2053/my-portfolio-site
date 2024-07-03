@@ -14,6 +14,8 @@ import { BiLogoJavascript, BiLogoNetlify } from "react-icons/bi";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiChakraui } from "react-icons/si";
 import { BiLogoTailwindCss } from "react-icons/bi";
+import { TbBrandReactNative } from "react-icons/tb";
+import { FaPython } from "react-icons/fa6";
 
 import { IconType } from "react-icons";
 import Resume from "../Resume/Resume";
@@ -43,6 +45,14 @@ const technologies = [
   {
     title: "React",
     icon: FaReact as IconType,
+  },
+  {
+    title: "React Native",
+    icon: TbBrandReactNative as IconType,
+  },
+  {
+    title: "Python",
+    icon: FaPython as IconType,
   },
   {
     title: "Postgresql",

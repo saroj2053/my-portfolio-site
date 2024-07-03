@@ -100,7 +100,6 @@ const Home = () => {
                 <Pill text="Download CV" />
               </span>
             </div>
-            {/* <a className="home__downloadCV">Download CV</a> */}
           </div>
         </div>
         <div className="home__right">
@@ -157,7 +156,7 @@ const Home = () => {
       </div>
 
       <div className={`skins-switcher ${skinVisibility ? "visible" : ""}`}>
-        <h4>Skin Colors</h4>
+        <h4 className="skin-title">Skin Colors</h4>
         <div className="skins">
           <span
             className="skin-1"

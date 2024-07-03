@@ -293,6 +293,19 @@
   text-transform: capitalize;
 }
 
+.skin-title {
+  text-align: center;
+  font-weight: normal;
+  color: lightgray;
+}
+.skin-title::after {
+  display: block;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  border-bottom: 3px solid var(--skin-color);
+}
+
 .skins-switcher .skins {
   display: flex;
   flex-wrap: wrap;
@@ -313,7 +326,7 @@
 }
 
 .skins-switcher .skin-2 {
-  background: #1854b4;
+  background: #3b82f6;
 }
 
 .skins-switcher .skin-3 {
@@ -321,11 +334,11 @@
 }
 
 .skins-switcher .skin-4 {
-  background: #ec1839;
+  background: #e11d48;
 }
 
 .skins-switcher .skin-5 {
-  background: #fa5b0f;
+  background: #22d3ee;
 }
 
 .skins-switcher .skin-6 {
