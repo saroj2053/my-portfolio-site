@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import "./Project.css";
-import projects from "./projectData";
+import projects from "../../data/projects";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import GradientDivider from "../GradientDivider/GradientDivider";
 

@@ -3,90 +3,11 @@ import "./About.css";
 import lazyCoderSvg from "../../assets/lazy-coder.svg";
 
 import { Element } from "react-scroll";
-import { FaNodeJs, FaReact, FaGitAlt } from "react-icons/fa6";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa6";
-import { BiLogoMongodb } from "react-icons/bi";
-import { FaJava } from "react-icons/fa6";
-import { TbBrandVite } from "react-icons/tb";
-import { TbBrandVscode } from "react-icons/tb";
-import { BiLogoJavascript, BiLogoNetlify } from "react-icons/bi";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { SiChakraui } from "react-icons/si";
-import { BiLogoTailwindCss } from "react-icons/bi";
-import { TbBrandReactNative } from "react-icons/tb";
-import { FaPython } from "react-icons/fa6";
 
-import { IconType } from "react-icons";
 import Resume from "../Resume/Resume";
 import GradientDivider from "../GradientDivider/GradientDivider";
+import { technologies } from "../../data/technologies";
 
-const technologies = [
-  {
-    title: "HTML5",
-    icon: FaHtml5 as IconType,
-  },
-  {
-    title: "CSS3",
-    icon: FaCss3Alt as IconType,
-  },
-  {
-    title: "Javascript",
-    icon: BiLogoJavascript as IconType,
-  },
-  {
-    title: "Java",
-    icon: FaJava as IconType,
-  },
-  {
-    title: "NodeJs",
-    icon: FaNodeJs as IconType,
-  },
-  {
-    title: "React",
-    icon: FaReact as IconType,
-  },
-  {
-    title: "React Native",
-    icon: TbBrandReactNative as IconType,
-  },
-  {
-    title: "Python",
-    icon: FaPython as IconType,
-  },
-  {
-    title: "Postgresql",
-    icon: BiLogoPostgresql as IconType,
-  },
-  {
-    title: "MongoDB",
-    icon: BiLogoMongodb as IconType,
-  },
-  {
-    title: "Vite",
-    icon: TbBrandVite as IconType,
-  },
-  {
-    title: "Netlify",
-    icon: BiLogoNetlify as IconType,
-  },
-  {
-    title: "Chakra UI",
-    icon: SiChakraui as IconType,
-  },
-  {
-    title: "Tailwind CSS",
-    icon: BiLogoTailwindCss as IconType,
-  },
-  {
-    title: "Git",
-    icon: FaGitAlt as IconType,
-  },
-  {
-    title: "VS Code",
-    icon: TbBrandVscode as IconType,
-  },
-];
 const About = ({ title }: { title: string }) => {
   return (
     <Element className="about" name="about" id="about">

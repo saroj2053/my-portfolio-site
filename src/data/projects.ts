@@ -1,11 +1,11 @@
-import solarCalculite1 from "../../assets/project-images/solarCalculite2.png";
-import rateMyUni from "../../assets/project-images/ratemyuni.png";
-import movixImage from "../../assets/project-images/movix_website.png";
-import linkedInImage from "../../assets/project-images/linkedin-website.png";
-import chatAppImage from "../../assets/project-images/chat-app.png";
-import campusflowImage from "../../assets/project-images/campusflow-website.png";
-import sarlahiMarktImage from "../../assets/project-images/sarlahimarkt-image.png";
-import stronicsImage from "../../assets/project-images/stronics-image.png";
+import solarCalculite1 from "../assets/project-images/solarCalculite2.png";
+import rateMyUni from "../assets/project-images/ratemyuni.png";
+import movixImage from "../assets/project-images/movix_website.png";
+import linkedInImage from "../assets/project-images/linkedin-website.png";
+import chatAppImage from "../assets/project-images/chat-app.png";
+import campusflowImage from "../assets/project-images/campusflow-website.png";
+import sarlahiMarktImage from "../assets/project-images/sarlahimarkt-image.png";
+import stronicsImage from "../assets/project-images/stronics-image.png";
 
 const projects = [
   {
