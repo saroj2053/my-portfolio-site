@@ -83,13 +83,14 @@ const Home = () => {
             </h4>
             <div className="home__profileStatus">
               <span>
-                <FaDiamond />
+                <FaDiamond color="var(--skin-color)" size={20} />
               </span>
-              Pursuing master's in web engineering at TU chemnitz
+              Pursuing master's in web engineering at Technical University of
+              Chemnitz
             </div>
             <div className="home__profileStatus">
               <span>
-                <FaDiamond />
+                <FaDiamond color="var(--skin-color)" size={20} />
               </span>
               Having hands on experience with git, github and web deployments
             </div>

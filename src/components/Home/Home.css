@@ -72,23 +72,26 @@
 }
 
 .home__myDetails .home__profileHeading {
-  font-size: 3rem;
-  text-transform: uppercase;
   color: var(--text-black-900);
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 55px;
+  margin: 0 0 5px;
+  line-height: 75px;
 }
 
 .home__left .home__profileName {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 600;
   letter-spacing: 1px;
   margin: 0.75rem 0;
   color: var(--skin-color);
 }
 
 .home__profileSubHeading {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: var(--text-black-700);
+  letter-spacing: 0.5px;
+  margin: 1rem 0;
 }
 
 .home__typoEffect {
@@ -298,6 +301,7 @@
   font-weight: normal;
   color: lightgray;
 }
+
 .skin-title::after {
   display: block;
   content: "";
