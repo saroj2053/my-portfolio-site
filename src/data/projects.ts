@@ -6,6 +6,7 @@ import chatAppImage from "../assets/project-images/chat-app.png";
 import campusflowImage from "../assets/project-images/campusflow-website.png";
 import sarlahiMarktImage from "../assets/project-images/sarlahimarkt-image.png";
 import stronicsImage from "../assets/project-images/stronics-image.png";
+import ezyEatsImage from "../assets/project-images/EzyEats.png";
 
 const projects = [
   {
@@ -117,6 +118,27 @@ const projects = [
     ],
     githubUrl: "https://github.com/saroj2053/Stronics",
     deployedUrl: "https://stronics.onrender.com/",
+  },
+  {
+    id: 9,
+    image: ezyEatsImage,
+    name: "Ezy Eats. - a mern food ordering app",
+    description: "An ongoing mern food ordering platform ",
+    techUsed: [
+      "Nodejs",
+      "Expressjs",
+      "MongoDB",
+      "Reactjs",
+      "Express Validator",
+      "TailwindCSS",
+      "ShadCn",
+      "Zustand",
+      "Cloudinary",
+      "Stripe",
+    ],
+    githubUrl:
+      "https://github.com/saroj2053/ezyeats-food-ordering-app-frontend",
+    deployedUrl: "https://ezyeats-food-ordering-app-frontend.onrender.com/",
   },
 ];
 

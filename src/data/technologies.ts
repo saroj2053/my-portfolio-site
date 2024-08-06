@@ -8,7 +8,7 @@ import {
   BiLogoMongodb,
 } from "react-icons/bi";
 
-import { SiChakraui } from "react-icons/si";
+import { SiChakraui, SiShadcnui, SiNestjs } from "react-icons/si";
 
 import {
   FaPython,
@@ -36,6 +36,7 @@ export const technologies = [
     title: "SASS",
     icon: FaSass as IconType,
   },
+  { title: "shadcn/ui", icon: SiShadcnui as IconType },
   {
     title: "Javascript",
     icon: BiLogoJavascript as IconType,
@@ -45,8 +46,12 @@ export const technologies = [
     icon: FaJava as IconType,
   },
   {
-    title: "NodeJs",
+    title: "Nodejs",
     icon: FaNodeJs as IconType,
+  },
+  {
+    title: "Nestjs",
+    icon: SiNestjs as IconType,
   },
   {
     title: "React",
