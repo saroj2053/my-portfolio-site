@@ -4,9 +4,9 @@ import { FaCode } from "react-icons/fa";
 import { FaBullhorn, FaDownload } from "react-icons/fa6";
 import { PiStudentFill } from "react-icons/pi";
 
-const Pill = ({ text }: { text: string }) => {
+const Pill = ({ text, isFilled }: { text: string; isFilled?: boolean }) => {
   return (
-    <div className="pill">
+    <div className={`pill ${isFilled && "filledBg"} `}>
       {text === "Developer" && <FaCode />}
       {text === "Student" && <PiStudentFill />}
       {text === "Available for Work" && <FaBullhorn />}

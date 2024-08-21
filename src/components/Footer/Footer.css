@@ -4,6 +4,33 @@
   transition: var(--bg-transition);
 }
 
+/* .bottomShape {
+  transform: rotate(180deg);
+  line-height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.svg_bottom {
+  height: 50px;
+  transform: rotateY(180deg);
+  width: calc(143% + 1px);
+}
+
+.shapeFillBlack {
+  fill: #2e3032;
+} */
+
+.footer-section-one {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-section-one-right.footer_links > li {
+  list-style-type: none;
+}
+
 .footer-items {
   display: flex;
   justify-content: space-between;

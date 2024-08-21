@@ -17,18 +17,6 @@ const Footer = () => {
                 Saroj Sah. All rights reserved
               </small>
             </div>
-            {/* <div className="footer__middle">
-              <img
-                style={{
-                  width: "60px",
-                  objectFit: "contain",
-                  filter: "drop-shadow(0px 0px 15px var(--skin-color))",
-                }}
-                src={brandSvg}
-                alt=""
-              />
-              <h2 className="footer__middle-title">Saroj🧑🏻&zwj;💻</h2>
-            </div> */}
             <div className="footer-right">
               <ul className="iconWrapper">
                 {links.map((link, index) => (

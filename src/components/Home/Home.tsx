@@ -79,9 +79,18 @@ const Home = () => {
             </div>
 
             <h4 className="home__profileSubHeading">
-              currently based in Chemnitz, Germany.
+              Web Engineering Student - Technical University of Chemnitz
             </h4>
-            <div className="home__profileStatus">
+            <div className="home__profileSummary">
+              A passionate web engineer with expertise in web development,
+              focusing on the MERN stack. I possess a strong foundation in web
+              deployment tools and version control with Git. I am dedicated to
+              developing full-fledged software solutions that prioritize
+              optimization for high performance and productivity. My goal is to
+              deliver seamless and efficient web experiences that meet the needs
+              of both users and businesses.
+            </div>
+            {/* <div className="home__profileStatus">
               <span>
                 <FaDiamond color="var(--skin-color)" size={20} />
               </span>
@@ -93,12 +102,12 @@ const Home = () => {
                 <FaDiamond color="var(--skin-color)" size={20} />
               </span>
               Having hands on experience with git, github and web deployments
-            </div>
+            </div> */}
             <div className="home__ctaButtons">
               <span className="home__pill">
                 <Pill text="Developer" />
                 <Pill text="Student" />
-                <Pill text="Download CV" />
+                <Pill text="Download CV" isFilled />
               </span>
             </div>
           </div>

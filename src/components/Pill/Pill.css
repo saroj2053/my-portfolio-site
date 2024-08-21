@@ -18,3 +18,13 @@
   background-color: var(--skin-color);
   color: #fff;
 }
+
+.filledBg {
+  background-color: var(--skin-color);
+  color: white;
+}
+
+.filledBg:hover {
+  background-color: var(--bg-black-900);
+  color: var(--text-black-900);
+}

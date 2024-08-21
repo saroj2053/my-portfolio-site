@@ -13,7 +13,7 @@
   --bg-black-50: #e8dfec;
   --text-black-900: #0f172a;
   --text-black-700: #334155;
-  --bg-transition: background 0.8s ease-in-out;
+  /* --bg-transition: background 0.8s ease-in-out; */
 }
 
 body {
@@ -45,7 +45,7 @@ body.skin3 {
 }
 
 body.skin4 {
-  --skin-color: #e11d48;
+  --skin-color: #b01111;
 }
 
 body.skin5 {

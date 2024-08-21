@@ -2,7 +2,7 @@
   width: 100%;
   padding: 8px 0;
   background: var(--bg-black-100);
-  transition: background 0.8s ease-in-out;
+  /* transition: background 0.8s ease-in-out; */
   color: var(--text-black-900);
   position: fixed;
   top: 0;
@@ -98,7 +98,7 @@
 .theme-toggler {
   border: 1px solid var(--bg-black-50);
   background: var(--bg-black-100);
-  transition: background 0.8s ease-in-out;
+  /* transition: background 0.8s ease-in-out; */
   padding: 0.25rem;
   border-radius: 50%;
   width: 30px;
