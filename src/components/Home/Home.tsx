@@ -1,7 +1,7 @@
 import "./Home.css";
 
 import { Element } from "react-scroll";
-import { FaDiamond, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { HiMiniArrowDownRight } from "react-icons/hi2";
 import { Link } from "react-scroll";
 import portfolioImage from "../../assets/profile_img.jpg";
