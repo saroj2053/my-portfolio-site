@@ -74,7 +74,7 @@
 .home__myDetails .home__profileHeading {
   color: var(--text-black-900);
   font-weight: 600;
-  font-size: 55px;
+  font-size: calc(32px + 0.8vw);
   margin: 0 0 5px;
   line-height: 75px;
 }
@@ -86,7 +86,7 @@
 }
 
 .home__left .home__profileName {
-  font-size: 55px;
+  font-size: calc(32px + 0.8vw);
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0.75rem 0;
@@ -103,7 +103,7 @@
 .home__typoEffect {
   display: flex;
   gap: 8px;
-  font-size: 2.5rem;
+  font-size: calc(32px + 0.8vw);
   font-weight: 600;
   align-items: center;
   color: var(--skin-color);
@@ -137,20 +137,22 @@
 
 .home__myImage {
   position: relative;
+  background-color: var(--skin-color);
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
 }
 
 .home__profileImage {
-  /* width: 5000px;
-  height: auto; */
-  filter: drop-shadow(0px 0px 22px var(--skin-color));
-  /* border: 1px solid var(--bg-black-50); */
-  max-width: 25rem;
-  aspect-ratio: 1 / 1;
+  /* filter: drop-shadow(0px 0px 22px var(--skin-color)); */
+  /* max-width: 25rem; */
+  /* aspect-ratio: 1 / 1; */
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 57% 43% 64% 36% / 58% 35% 65% 42%;
-  overflow: hidden;
+
+  /* overflow: hidden;
+  border-radius: 57% 43% 64% 36% / 58% 35% 65% 42%; */
+
   transition: all 1s ease 0s;
   animation-name: borderWorm;
   animation-duration: 15s;
@@ -162,7 +164,7 @@
 
 .home__profileImage > img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .home__downloadCV {

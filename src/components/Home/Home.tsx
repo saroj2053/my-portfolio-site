@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { HiMiniArrowDownRight } from "react-icons/hi2";
 import { Link } from "react-scroll";
-import portfolioImage from "../../assets/profile_img.jpg";
+import portfolioImage from "../../assets/profile_img.png";
 
 import Pill from "../Pill/Pill";
 
@@ -82,13 +82,13 @@ const Home = () => {
               Web Engineering Student - Technical University of Chemnitz
             </h4>
             <div className="home__profileSummary">
-              A passionate web engineer with expertise in web development,
-              focusing on the MERN stack. I possess a strong foundation in web
-              deployment tools and version control with Git. I am dedicated to
-              developing full-fledged software solutions that prioritize
-              optimization for high performance and productivity. My goal is to
-              deliver seamless and efficient web experiences that meet the needs
-              of both users and businesses.
+              I am a full-stack web developer with 2 years of experience in
+              building software solutions using the MERN Stack within a
+              monolithic architecture. As a dedicated learner with a passion for
+              coding and creating scalable software applications, I am looking
+              for opportunities as a Full Stack Developer in the field of Web
+              Engineering where I can continue to grow and contribute to
+              innovative projects.
             </div>
             {/* <div className="home__profileStatus">
               <span>
