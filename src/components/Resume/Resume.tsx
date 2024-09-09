@@ -46,7 +46,7 @@ const Resume = () => {
             <h4 className="resume-employment__subtitle text-lg">
               Susankya Tech Pvt. Ltd.
             </h4>
-            <p className="resume__date text-lg">11/2020 - 12/2021</p>
+            <p className="resume__date text-lg">11/2020 - 07/2022</p>
             <div className="resume__description text-sm">
               <ul style={{ paddingLeft: "30px" }}>
                 <li>
