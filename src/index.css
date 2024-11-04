@@ -77,10 +77,10 @@ body.skin8 {
 }
 
 #author__name {
-  margin-bottom: 2rem;
-  font-size: 6rem;
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
   text-align: center;
-  line-height: 2rem;
+  line-height: 1.5rem;
   font-weight: 700;
   color: var(--skin-color);
 }
