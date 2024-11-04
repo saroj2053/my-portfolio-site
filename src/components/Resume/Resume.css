@@ -1,5 +1,6 @@
 .resume__heading {
   color: var(--text-black-700);
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
   margin: 2rem 0;
 }

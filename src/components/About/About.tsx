@@ -1,12 +1,13 @@
 import "./About.css";
 
-import lazyCoderSvg from "../../assets/lazy-coder.svg";
+import portfolioImage from "../../assets/profile_img.png";
 
 import { Element } from "react-scroll";
 
 import Resume from "../Resume/Resume";
 import GradientDivider from "../GradientDivider/GradientDivider";
 import { technologies } from "../../data/technologies";
+import Pill from "../Pill/Pill";
 
 const About = ({ title }: { title: string }) => {
   return (
@@ -25,6 +26,15 @@ const About = ({ title }: { title: string }) => {
               stack, I am adept at developing full-fledged solutions from the
               frontend to the backend.
             </p>
+            <p className="about__profileSummary">
+              I am a full-stack web developer with 2 years of experience in
+              building software solutions using the MERN Stack within a
+              monolithic architecture. As a dedicated learner with a passion for
+              coding and creating scalable software applications, I am looking
+              for opportunities as a Full Stack Developer in the field of Web
+              Engineering where I can continue to grow and contribute to
+              innovative projects.
+            </p>
             <p className="about__status">
               Currently, I am enrolled in the Master of Science program in Web
               Engineering at Technische Universität Chemnitz in Germany, where I
@@ -32,6 +42,13 @@ const About = ({ title }: { title: string }) => {
               technologies.
             </p>
 
+            <div className="about__ctaButtons">
+              <span className="about__pill">
+                <Pill text="Developer" />
+                <Pill text="Student" />
+                <Pill text="Download CV" isFilled />
+              </span>
+            </div>
             <div className="info">
               <figure className="figure">
                 I am a{" "}
@@ -53,8 +70,21 @@ const About = ({ title }: { title: string }) => {
           </div>
 
           <div className="about__right">
-            <div className="lazyCoderImage">
-              <img src={lazyCoderSvg} alt="" />
+            <div className="about__currentStatus">
+              <Pill text="Available for Work" />
+            </div>
+            <div className="portfolioImage">
+              <img
+                style={{
+                  width: "400px",
+                  height: "400px",
+                  objectFit: "cover",
+                  filter: "grayscale(60%)",
+                  borderRadius: "50%",
+                }}
+                src={portfolioImage}
+                alt=""
+              />
             </div>
           </div>
         </div>

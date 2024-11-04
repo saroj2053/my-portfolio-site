@@ -4,15 +4,15 @@ import { Element } from "react-scroll";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { HiMiniArrowDownRight } from "react-icons/hi2";
 import { Link } from "react-scroll";
-import portfolioImage from "../../assets/profile_img.png";
 
-import Pill from "../Pill/Pill";
+import homeImage from "../../assets/personwithcomputer.svg";
 
 import { SkinContext } from "../../contexts/SkinContext/SkinProvider";
 import React, { useContext, useState } from "react";
 import { MdOutlineSettings } from "react-icons/md";
 import GradientDivider from "../GradientDivider/GradientDivider";
 import Typewriter from "typewriter-effect";
+import { TypingEffect } from "../animations/typing-effect";
 
 const duration = 500;
 const Home = () => {
@@ -59,11 +59,11 @@ const Home = () => {
       <div className="home__contents">
         <div className="home__left">
           <div className="home__myDetails">
-            <h1 className="home__profileHeading">
-              Hi, I am <span className="home__profileName">Saroj Sah</span>
-            </h1>
+            <div>
+              <TypingEffect />
+            </div>
+         
             <div className="home__typoEffect">
-              <span>a</span>
               <Typewriter
                 options={{
                   strings: [
@@ -77,19 +77,14 @@ const Home = () => {
                 }}
               />
             </div>
-
-            <h4 className="home__profileSubHeading">
-              Web Engineering Student - Technical University of Chemnitz
-            </h4>
-            <div className="home__profileSummary">
-              I am a full-stack web developer with 2 years of experience in
-              building software solutions using the MERN Stack within a
-              monolithic architecture. As a dedicated learner with a passion for
-              coding and creating scalable software applications, I am looking
-              for opportunities as a Full Stack Developer in the field of Web
-              Engineering where I can continue to grow and contribute to
-              innovative projects.
+            <div className="home__image">
+              <img src={homeImage} alt="person with computer" />
             </div>
+
+            {/* <h4 className="home__profileSubHeading">
+              Web Engineering Student - Technical University of Chemnitz
+            </h4> */}
+            
             {/* <div className="home__profileStatus">
               <span>
                 <FaDiamond color="var(--skin-color)" size={20} />
@@ -103,34 +98,10 @@ const Home = () => {
               </span>
               Having hands on experience with git, github and web deployments
             </div> */}
-            <div className="home__ctaButtons">
-              <span className="home__pill">
-                <Pill text="Developer" />
-                <Pill text="Student" />
-                <Pill text="Download CV" isFilled />
-              </span>
-            </div>
+            
           </div>
         </div>
-        <div className="home__right">
-          <div className="home__myImage">
-            <div className="home__profileImage">
-              <img
-                style={{
-                  width: "300px",
-                  height: "300px",
-                  objectFit: "cover",
-                  filter: "grayscale(40%)",
-                }}
-                src={portfolioImage}
-                alt=""
-              />
-            </div>
-            <div className="home__currentStatus">
-              <Pill text="Available for Work" />
-            </div>
-          </div>
-        </div>
+        
       </div>
       <div className="wavy-background">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

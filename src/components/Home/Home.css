@@ -60,7 +60,8 @@
 
 .home__contents {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 0 10%;
   margin-top: 8rem;
@@ -98,15 +99,18 @@
   color: var(--text-black-700);
   letter-spacing: 0.5px;
   margin: 1rem 0;
+  text-align: center;
 }
 
 .home__typoEffect {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
   font-size: calc(32px + 0.8vw);
   font-weight: 600;
   align-items: center;
-  color: var(--skin-color);
+  color: var(--text-black-700);
   margin: 0.75rem 0;
 }
 
@@ -118,21 +122,24 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
-}
 
-.home__profileSummary {
-  font-size: 0.95rem;
-  color: var(--text-black-700);
-  margin: 1.5rem 0;
-  font-weight: 500;
-  display: flex;
-  gap: 0.5rem;
-  line-height: 2rem;
-  align-items: center;
 }
 
 .home__profileStatus span {
   display: flex;
+}
+
+.home__image {
+  margin-top: 5rem;
+ height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__image > img {
+  height: 100%;
+  object-fit: contain;
 }
 
 .home__myImage {
@@ -180,30 +187,11 @@
   color: white;
 }
 
-.home__currentStatus {
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 90%;
-  left: 75%;
-  transform: translate(-50%);
-}
 
-.home__ctaButtons {
-  margin: 45px 0;
-}
-
-.home__pill {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 
 .wavy-background {
   width: 100%;
-  z-index: 0;
+  z-index: 1;
   position: relative;
 }
 
