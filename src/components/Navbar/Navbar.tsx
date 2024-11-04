@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import { FaMoon, FaSun } from "react-icons/fa6";
 
 // import brandSvg from "../../assets/portfolio-brand.svg";
+// import profileImg from "../../assets/profile_img.png";
 import { useContext, useState } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext/ThemeProvider";
 import { BiMenu, BiX } from "react-icons/bi";
@@ -34,7 +35,8 @@ const Navbar = () => {
           <div className="nav">
             <div className="navbar__left">
               <Link to="/" className="nav__brand" aria-label="Go home">
-                <h1 className="nav__brand-title">&lt;Saroj/&gt;</h1>
+                <h1 className="nav__brand-title">&lt;<span className="author__name">Saroj</span> /&gt;</h1>
+                {/* <img src={profileImg} alt="" /> */}
               </Link>
             </div>
             <div className={`navbar__middle ${isNavOpen ? "open" : ""}`}>

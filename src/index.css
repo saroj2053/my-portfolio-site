@@ -73,3 +73,23 @@ body.skin8 {
   background: var(--skin-color);
   color: #fff;
 }
+
+
+body {
+  cursor:
+    url("/cursor/cursor-@1x.svg") 0 0,
+    auto;
+  cursor:
+    -webkit-image-set(url("/cursor/cursor-@2x.svg") 2x) 0 0,
+    auto;
+}
+
+button, button:hover, .pill, .gotoTop,
+a:hover
+{  cursor:
+    url("/cursor/cursor-hover.svg") 4 2,
+    pointer;
+  cursor:
+    -webkit-image-set(url("/cursor/cursor-hover2.svg") 2x) 8 4,
+    pointer;
+}

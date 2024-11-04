@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./GoTopButton.css";
+import { FaArrowUp } from "react-icons/fa6";
+
 
 const GoTopButton = () => {
   const goTopBtnRef = useRef<HTMLButtonElement | null>(null);
@@ -37,7 +39,9 @@ const GoTopButton = () => {
         type="button"
         ref={goTopBtnRef}
         onClick={handleBtnClick}
-      ></button>
+      >
+        <FaArrowUp size={20} style={{color: "#fff"}} />
+      </button>
     </div>
   );
 };

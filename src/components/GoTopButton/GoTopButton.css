@@ -2,8 +2,8 @@
   position: fixed;
   display: block;
   box-sizing: border-box;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   z-index: 5;
   bottom: 0;
   border: none;
@@ -16,7 +16,7 @@
   transition: right 0.3s ease;
 }
 
-.gotoTop::before,
+/* .gotoTop::before,
 .gotoTop::after {
   content: '';
   position: absolute;
@@ -24,9 +24,9 @@
   width: 4px;
   background: #fff;
   top: 16px;
-}
+} */
 
-.gotoTop::before {
+/* .gotoTop::before {
   left: 18px;
   transform: rotate(45deg);
 }
@@ -34,7 +34,7 @@
 .gotoTop::after {
   right: 18px;
   transform: rotate(-45deg);
-}
+} */
 
 
 button.visible {
