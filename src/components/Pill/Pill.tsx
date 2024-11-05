@@ -1,7 +1,7 @@
 import "./Pill.css";
 import { FaCode } from "react-icons/fa";
 
-import { FaBullhorn, FaDownload } from "react-icons/fa6";
+import { FaDownload } from "react-icons/fa6";
 import { PiStudentFill } from "react-icons/pi";
 
 const Pill = ({ text, isFilled }: { text: string; isFilled?: boolean }) => {
@@ -9,7 +9,7 @@ const Pill = ({ text, isFilled }: { text: string; isFilled?: boolean }) => {
     <div className={`pill ${isFilled && "filledBg"} `}>
       {text === "Developer" && <FaCode />}
       {text === "Student" && <PiStudentFill />}
-      {text === "Available for Work" && <FaBullhorn />}
+      {/* {text === "Available for Work" && <FaBullhorn />} */}
       {text === "Download CV" && <FaDownload />} {text}
     </div>
   );

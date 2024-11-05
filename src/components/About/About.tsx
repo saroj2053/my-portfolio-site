@@ -8,7 +8,7 @@ import Resume from "../Resume/Resume";
 import GradientDivider from "../GradientDivider/GradientDivider";
 import { technologies } from "../../data/technologies";
 import Pill from "../Pill/Pill";
-import { FaReact, FaNode, FaVuejs } from "react-icons/fa6";
+import { FaReact, FaNode, FaVuejs, FaBullhorn } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
 
 const About = ({ title }: { title: string }) => {
@@ -62,8 +62,8 @@ const About = ({ title }: { title: string }) => {
                 <figcaption className="captionText">
                   - Saroj Sah,
                   <cite>
-                    <small style={{ paddingLeft: "5px" }}>
-                      Seeking for Opportunities
+                    <small style={{ padding: "0 5px", alignSelf: "baseline"}} >
+                    Seeking for Opportunities <FaBullhorn /> 
                     </small>
                   </cite>
                 </figcaption>
@@ -72,9 +72,9 @@ const About = ({ title }: { title: string }) => {
           </div>
 
           <div className="about__right">
-            <div className="about__currentStatus">
+            {/* <div className="about__currentStatus">
               <Pill text="Available for Work" />
-            </div>
+            </div> */}
             <div className="portfolioImage">
               <span>
                 <FaReact size={60} />
