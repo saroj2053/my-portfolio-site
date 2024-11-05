@@ -15,6 +15,7 @@
   --bg-black-50: #e8dfec;
   --text-black-900: #0f172a;
   --text-black-700: #334155;
+  --bg-home: #ffffff;
   /* --bg-transition: background 0.8s ease-in-out; */
 }
 
@@ -26,6 +27,7 @@ body {
 }
 
 body.theme-dark {
+  --bg-home: #121212;
   --bg-black-900: #151515;
   --bg-black-100: #222222;
   --bg-black-50: #393939;

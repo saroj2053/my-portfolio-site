@@ -177,6 +177,16 @@
   }
 }
 
+@media screen and (max-width: 950px) {
+  .about__contents {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 929px) {
   .tech {
     width: 45%;
@@ -186,6 +196,14 @@
 @media screen and (max-width: 625px) {
   .tech {
     width: 100%;
+  }
+
+  .about__pill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
   }
 }
 

@@ -1,6 +1,6 @@
 .home {
   min-height: 100vh;
-  background: var(--bg-black-900);
+  background: var(--bg-home);
   /* background: linear-gradient(
     to bottom,
     var(--bg-black-50) 40%,

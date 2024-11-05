@@ -76,8 +76,8 @@ const About = ({ title }: { title: string }) => {
             <div className="portfolioImage">
               <img
                 style={{
-                  width: "400px",
-                  height: "400px",
+                  width: "300px",
+                  height: "300px",
                   objectFit: "cover",
                   filter: "grayscale(60%)",
                   borderRadius: "50%",
