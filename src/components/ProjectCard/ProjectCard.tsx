@@ -36,7 +36,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         start: "top 60%",
         end: "bottom 90%",
         scrub: true,
-        markers: true,
       },
     });
 

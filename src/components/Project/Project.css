@@ -73,4 +73,8 @@
     height: auto;
     margin: 10px;
   }
+
+  .projects {
+    gap: 2rem;
+  }
 }
