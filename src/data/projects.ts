@@ -7,6 +7,7 @@ import campusflowImage from "../assets/project-images/campusflow-website.png";
 import sarlahiMarktImage from "../assets/project-images/sarlahimarkt-image.png";
 import stronicsImage from "../assets/project-images/stronics-image.png";
 import ezyEatsImage from "../assets/project-images/EzyEats.png";
+import webWizardsImage from "../assets/project-images/webwizards.png";
 
 const projects = [
   {
@@ -140,6 +141,20 @@ const projects = [
       "https://github.com/saroj2053/ezyeats-food-ordering-app-frontend",
     deployedUrl: "https://ezyeats-food-ordering-app-frontend.onrender.com/",
   },
+  {
+    id: 10,
+    image: webWizardsImage,
+    name: "Web Wizards - a web development agency",
+    description:
+      "A web development agency that provides services for web development, web design, and digital marketing.",
+    techUsed: [
+      "React",
+      "Raw CSS",
+      "EmailJs",
+    ],
+    githubUrl: "https://github.com/saroj2053/web-wizards",
+    deployedUrl: "https://web-wizards-team.vercel.app/",
+  }
 ];
 
 export default projects;
