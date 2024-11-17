@@ -15,9 +15,8 @@ const projects = [
     image: sarlahiMarktImage,
     name: "SarlahiMarkt - Local Online Marketplace",
     description:
-      "An ongoing web application that provides user an online platform to undergo shoppng for different ecommerce products. It includes feature such as wishlisting products, rate them on the basis of their usage experience and provide review on the same.",
+      "A full-stack e-commerce solution with React, Node.js, and MongoDB.",
     techUsed: [
-      "Javascript",
       "Nodejs",
       "Expressjs",
       "MongoDB",

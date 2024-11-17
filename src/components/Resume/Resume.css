@@ -19,7 +19,7 @@
 }
 
 .resume__item {
-  border-left: 2px solid var(--skin-color);
+  border-left: 2px solid rgb(var(--skin-color));
   padding-left: 1.6rem;
   position: relative;
 }
@@ -33,14 +33,14 @@
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  border: 2px solid var(--skin-color);
+  border: 2px solid rgb(var(--skin-color));
   position: absolute;
   left: -0.70rem;
   background: var(--bg-black-900);
 }
 
 .resume-education__title, .resume-employment__title {
-  color: var(--skin-color);
+  color: rgb(var(--skin-color));
   font-weight: 600;
   margin-bottom: 0.36em;
 }

@@ -1,12 +1,12 @@
 :root {
-  --divider-color: rgba(var(--skin-color), 0.2)
+  --divider-color: rgba(rgb(var(--skin-color)), 0.2)
 }
 
 .gradientDivider {
   height: 20px;
   position: relative;
   width: 100%;
-  background: radial-gradient(ellipse farthest-side at top center, var(--skin-color), transparent)
+  background: radial-gradient(ellipse farthest-side at top center, rgb(var(--skin-color)), transparent)
 }
 
 

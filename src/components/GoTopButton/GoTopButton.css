@@ -9,7 +9,7 @@
   border: none;
   outline: none;
   border-radius: 50%;
-  background: var(--skin-color);
+  background: rgb(var(--skin-color));
   bottom: 15px;
   right: -100px;
   cursor: pointer;

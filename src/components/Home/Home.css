@@ -1,12 +1,6 @@
-.home {
+#home {
   min-height: 100vh;
   background: var(--bg-home);
-  /* background: linear-gradient(
-    to bottom,
-    var(--bg-black-50) 40%,
-    var(--bg-black-900) 65%
-  );
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
   transition: var(--bg-transition);
   padding-top: 3rem;
 }
@@ -32,7 +26,7 @@
 .home__social-icons .linkedin__icon,
 .home__social-icons .x__icon {
   display: flex;
-  border: 1px solid var(--skin-color);
+  border: 1px solid rgb(var(--skin-color));
   padding: 0.5rem;
   border-radius: 50%;
   transition: background 0.3s ease;
@@ -41,7 +35,7 @@
 .home__social-icons .github__icon:hover,
 .home__social-icons .linkedin__icon:hover,
 .home__social-icons .x__icon:hover {
-  background: var(--skin-color);
+  background: rgb(var(--skin-color));
   color: #fff;
 }
 
@@ -59,12 +53,13 @@
 }
 
 .home__contents {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 10%;
-  margin-top: 6rem;
+  padding: 6rem 0;
+  
 }
 
 .animate-fade-out {
@@ -80,27 +75,15 @@
   line-height: 75px;
 }
 
-.home__left {
-  flex: 0.6;
-  justify-content: center;
-  align-items: center;
-}
 
-.home__left .home__profileName {
+.home__profileName {
   font-size: calc(32px + 0.8vw);
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0.75rem 0;
-  color: var(--skin-color);
+  color: rgb(var(--skin-color));
 }
 
-.home__profileSubHeading {
-  font-size: 1.25rem;
-  color: var(--text-black-700);
-  letter-spacing: 0.5px;
-  margin: 1rem 0;
-  text-align: center;
-}
 
 .home__typoEffect {
   display: flex;
@@ -130,7 +113,7 @@
 }
 
 .home__image {
-  margin-top: 2rem;
+  margin: 2rem 0;
  height: 300px;
   display: flex;
   justify-content: center;
@@ -144,13 +127,13 @@
 
 .home__myImage {
   position: relative;
-  background-color: var(--skin-color);
+  background-color: rgb(var(--skin-color));
   border-top-right-radius: 100%;
   border-top-left-radius: 100%;
 }
 
 .home__profileImage {
-  /* filter: drop-shadow(0px 0px 22px var(--skin-color)); */
+  /* filter: drop-shadow(0px 0px 22px rgb(var(--skin-color))); */
   /* max-width: 25rem; */
   /* aspect-ratio: 1 / 1; */
   display: flex;
@@ -183,32 +166,22 @@
 }
 
 .home__downloadCV:hover {
-  background-color: var(--skin-color);
+  background-color: rgb(var(--skin-color));
   color: white;
 }
 
-
-
-.wavy-background {
-  width: 100%;
-  z-index: 1;
-  position: relative;
-}
-
-#wavy-svg {
-  fill: var(--skin-color);
+.swipe-down-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .swipe-down-btn {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   outline: none;
   text-decoration: none;
-  border: 1px solid var(--skin-color);
+  border: 1px solid rgb(var(--skin-color));
   color: var(--text-black-700);
-  background: var(--bg-black-900);
   font-size: calc(0.875rem + 0.1vw);
   font-weight: 500;
   font-family: inherit;
@@ -232,7 +205,7 @@
 }
 
 .swipe-down-btn:hover {
-  background: var(--skin-color);
+  background: rgb(var(--skin-color));
   color: #fff;
 }
 
@@ -265,7 +238,7 @@
 }
 
 .skin__visibility-toggler:hover {
-  background: var(--skin-color);
+  background: rgb(var(--skin-color));
 }
 
 .skin__visibility-toggler:hover > svg {
@@ -314,7 +287,7 @@
   content: "";
   width: 100px;
   margin: 0 auto;
-  border-bottom: 3px solid var(--skin-color);
+  border-bottom: 3px solid rgb(var(--skin-color));
 }
 
 .skins-switcher .skins {
@@ -417,7 +390,7 @@
   .home__profileImage {
     width: 300px;
     height: 300px;
-    border: 5px solid var(--skin-color);
+    border: 5px solid rgb(var(--skin-color));
     border-radius: 50%;
     padding: 1rem;
     position: relative;
@@ -440,7 +413,7 @@
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
   }
 
   .home__social-icons {

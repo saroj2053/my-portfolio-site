@@ -2,19 +2,19 @@ import "./Home.css";
 
 import { Element } from "react-scroll";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-import { HiMiniArrowDownRight } from "react-icons/hi2";
-import { Link } from "react-scroll";
 
 import homeImage from "../../assets/personwithcomputer.svg";
 
 import { SkinContext } from "../../contexts/SkinContext/SkinProvider";
 import React, { useContext, useState } from "react";
 import { MdOutlineSettings } from "react-icons/md";
-import GradientDivider from "../GradientDivider/GradientDivider";
 import Typewriter from "typewriter-effect";
 import { TypingEffect } from "../animations/typing-effect";
+import { HiMiniArrowDownRight } from "react-icons/hi2";
+import { Link } from "react-scroll";
 
 const duration = 500;
+
 const Home = () => {
   const { currentSkin, setCurrentSkin } = useContext(SkinContext);
   const [skinVisibility, setSkinVisibility] = useState(false);
@@ -36,7 +36,7 @@ const Home = () => {
     }
   });
   return (
-    <Element className="home" name="home">
+    <Element id="home" name="home">
       <div className="home__social-icons">
         <div className="github__icon">
           <a href="https://github.com/saroj2053" target="_blank">
@@ -57,12 +57,12 @@ const Home = () => {
       </div>
 
       <div className="home__contents">
-        <div className="home__left">
+   
           <div className="home__myDetails">
             <div>
               <TypingEffect />
             </div>
-         
+
             <div className="home__typoEffect">
               <Typewriter
                 options={{
@@ -80,55 +80,42 @@ const Home = () => {
             <div className="home__image">
               <img src={homeImage} alt="person with computer" />
             </div>
+            <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
 
-            {/* <h4 className="home__profileSubHeading">
-              Web Engineering Student - Technical University of Chemnitz
-            </h4> */}
-            
-            {/* <div className="home__profileStatus">
-              <span>
-                <FaDiamond color="var(--skin-color)" size={20} />
-              </span>
-              Pursuing master's in web engineering at Technical University of
-              Chemnitz
+            <p style={{marginBottom: "3rem", fontSize: "1.125rem", lineHeight: "1.75rem", color: "var(--text-black-700)", width: "80%", textAlign: "center"}}>
+              Crafting beautiful and functional web experiences with modern
+              technologies. Specialized in React, Node.js, and cloud
+              architecture.
+            </p>
             </div>
-            <div className="home__profileStatus">
-              <span>
-                <FaDiamond color="var(--skin-color)" size={20} />
-              </span>
-              Having hands on experience with git, github and web deployments
-            </div> */}
-            
+
+            <div className="swipe-down-btn-container">
+              <Link
+                className="swipe-down-btn"
+                to="projects"
+                spy
+                smooth
+                duration={duration}
+                activeClass="active"
+              >
+                View My Work
+                <span className="icon-wrapper">
+                  <HiMiniArrowDownRight className="arrow-icon" />
+                </span>
+              </Link>
+              <Link
+                className="swipe-down-btn"
+                to="contact"
+                spy
+                smooth
+                duration={duration}
+                activeClass="active"
+              >
+                Contact Me
+              </Link>
+            </div>
           </div>
         </div>
-        
-      </div>
-      <div className="wavy-background">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            id="wavy-svg"
-            fill="#0099ff"
-            fillOpacity="0.35"
-            d="M0,64L60,58.7C120,53,240,43,360,80C480,117,600,203,720,208C840,213,960,139,1080,101.3C1200,64,1320,64,1380,64L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-          ></path>
-        </svg>
-
-        <div className="swipe-down-btn-container">
-          <Link
-            className="swipe-down-btn"
-            to="about"
-            spy
-            smooth
-            duration={duration}
-            activeClass="active"
-          >
-            Get Started
-            <span className="icon-wrapper">
-              <HiMiniArrowDownRight className="arrow-icon" />
-            </span>
-          </Link>
-        </div>
-      </div>
       <div
         className={`skin__visibility-toggler ${skinVisibility ? "open" : ""}`}
         onClick={toggleSkinVisibility}
@@ -173,7 +160,6 @@ const Home = () => {
           ></span>
         </div>
       </div>
-      <GradientDivider />
     </Element>
   );
 };

@@ -31,12 +31,11 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="navbarContentsContainer">
+        <div className="container">
           <div className="nav">
             <div className="navbar__left">
               <Link to="/" className="nav__brand" aria-label="Go home">
                 <h1 className="nav__brand-title">&lt;<span className="author__name">Saroj</span> /&gt;</h1>
-                {/* <img src={profileImg} alt="" /> */}
               </Link>
             </div>
             <div className={`navbar__middle ${isNavOpen ? "open" : ""}`}>

@@ -10,6 +10,7 @@ import { technologies } from "../../data/technologies";
 import Pill from "../Pill/Pill";
 import { FaReact, FaNode, FaVuejs, FaBullhorn } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 const About = ({ title }: { title: string }) => {
   return (
@@ -62,8 +63,8 @@ const About = ({ title }: { title: string }) => {
                 <figcaption className="captionText">
                   - Saroj Sah,
                   <cite>
-                    <small style={{ padding: "0 5px", alignSelf: "baseline"}} >
-                    Seeking for Opportunities <FaBullhorn /> 
+                    <small style={{ padding: "0 5px", alignSelf: "baseline" }}>
+                      Seeking for Opportunities <FaBullhorn />
                     </small>
                   </cite>
                 </figcaption>
@@ -85,7 +86,9 @@ const About = ({ title }: { title: string }) => {
               <span>
                 <RiNextjsFill size={80} />
               </span>
-              <span><FaVuejs size={80} /> </span>
+              <span>
+                <FaVuejs size={80} />{" "}
+              </span>
               <img src={portfolioImage} alt="" />
             </div>
           </div>
@@ -98,10 +101,17 @@ const About = ({ title }: { title: string }) => {
           <h2 className="tech-header">Tools and Technologies_</h2>
           <div className="technologies">
             {technologies.map((tech, index) => (
-              <div key={index} className="tech">
-                <span>{tech.icon({ size: 80 })}</span>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.125 }}
+                className="tech"
+              >
+                <span>{tech.icon({ size: 40 })}</span>
                 <h4>{tech.title}</h4>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
