@@ -20,10 +20,5 @@ export function TypingEffect() {
     };
   }, [i]);
 
-  return (
-    // mb-2 text-center font-montserrat text-2xl font-bold tracking-[-0.02em] drop-shadow-sm lg:text-5xl xl:mb-4 2xl:text-8xl
-    <h1 id="author__name">
-      {displayedText ? displayedText : ""}
-    </h1>
-  );
+  return <h1 id="author__name">{displayedText ? displayedText : ""}</h1>;
 }
