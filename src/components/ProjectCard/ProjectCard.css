@@ -24,8 +24,9 @@
 .imageOverlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(var(--skin-color), 0.5);
   opacity: 0;
+  height: 12rem;
   display: flex;
   align-items: center;
   justify-content: center;
