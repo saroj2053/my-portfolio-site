@@ -21,22 +21,14 @@ const About = ({ title }: { title: string }) => {
         </div>
         <div className="about__contents">
           <div className="about__left">
-            <p className="about__intro">
-              Greetings! My name is Saroj Sah, and I specialize in developing
-              web applications as a Full Stack Developer for both web and mobile
-              platforms. I excel in the MERN (MongoDB, Express.js, React.js,
-              Node.js) stack. With hands-on experience in each component of the
-              stack, I am adept at developing full-fledged solutions from the
-              frontend to the backend.
-            </p>
             <p className="about__profileSummary">
-              I am a full-stack web developer with 2 years of experience in
-              building software solutions using the MERN Stack within a
-              monolithic architecture. As a dedicated learner with a passion for
-              coding and creating scalable software applications, I am looking
-              for opportunities as a Full Stack Developer in the field of Web
-              Engineering where I can continue to grow and contribute to
-              innovative projects.
+              Greetings! My name is Saroj Sah. I am a full-stack web developer
+              with 2 years of experience in building software solutions using
+              the MERN Stack within a monolithic architecture. As a dedicated
+              learner with a passion for coding and creating scalable software
+              applications, I am looking for opportunities as a Full Stack
+              Developer in the field of Web Engineering where I can continue to
+              grow and contribute to innovative projects.
             </p>
             <p className="about__status">
               Currently, I am enrolled in the Master of Science program in Web
