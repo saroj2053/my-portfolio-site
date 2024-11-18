@@ -10,12 +10,14 @@
 }
 
 :root {
-  --bg-black-900: #f9fafb;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-card: #ffffff;
+  --text-gray-600: #4b5563;
   --bg-black-100: #fdf9ff;
   --bg-black-50: #e8dfec;
   --text-black-900: #0f172a;
   --text-black-700: #334155;
-  --bg-home: #ffffff;
   
 }
 
@@ -28,8 +30,10 @@ body {
 }
 
 body.theme-dark {
-  --bg-home: #121212;
-  --bg-black-900: #151515;
+  --bg-primary: #111827;
+  --bg-secondary: #111827;
+  --bg-card: #1f2937;
+  --text-gray-600: #9ca3af;
   --bg-black-100: #222222;
   --bg-black-50: #393939;
   --text-black-900: #f1f5f9;

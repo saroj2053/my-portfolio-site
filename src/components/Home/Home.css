@@ -1,6 +1,6 @@
 #home {
   min-height: 100vh;
-  background: var(--bg-home);
+  background: var(--bg-primary);
   transition: var(--bg-transition);
   padding-top: 3rem;
 }

@@ -1,5 +1,5 @@
 .project {
-  background: var(--bg-black-900);
+  background: var(--bg-primary);
   padding: 6rem 0;
   transition: var(--bg-transition);
 }

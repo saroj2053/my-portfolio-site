@@ -1,11 +1,13 @@
 import "./Contact.css";
 import { Element } from "react-scroll";
 import { FaGithub, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
+import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import { useState } from "react";
 import { Bounce, ToastContainer, toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
 
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -119,82 +121,146 @@ const Contact = () => {
 
         <div className="contact__details">
           <div className="contact__details-header">
-            <h2>Do you have any questions or suggestions?</h2>
-            <p>I would love to hear from you</p>
-            <span>Reach out to me</span>
+            <h2>Get In Touch</h2>
+            <p>Reach out to me if you have any questions or suggestions...</p>
           </div>
 
-          <div className="contact__details-form">
-            <form className="contact__form" onSubmit={handleSubmit}>
-              <div className="row">
-                <div className="form-item col-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      value={formData.name}
-                      onChange={(evt) =>
-                        setFormData({ ...formData, name: evt.target.value })
-                      }
-                      className="form-control"
-                      placeholder="Name"
-                      required
-                    />
+          <div className="contact__cards-wrapper">
+            <div className="contact__cards">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
+                <div className="contact__card">
+                  <h3 className="contact__heading">Contact Information</h3>
+
+                  <div className="contact__links contact_email">
+                    <FiMail className="contact__icons" />
+                    <div className="contact__email-details">
+                      <p>Email</p>
+                      <a href="mailto:sarojsaroj390@gmail.com">
+                        sarojsaroj390@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                  <div className="contact__links contact__phone">
+                    <FiPhone className="contact__icons" />
+                    <div className="contact__phone-details">
+                      <p>Phone</p>
+                      <a href="tel:+4912345678910">+49 1234 567 8910</a>
+                    </div>
+                  </div>
+                  <div className="contact__links contact__location">
+                    <FiMapPin className="contact__icons" />
+                    <div className="contact__location-details">
+                      <p>Location</p>
+                      <p>Chemnitz, DE</p>
+                    </div>
                   </div>
                 </div>
-                <div className="form-item col-6">
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      value={formData.email}
-                      onChange={(evt) =>
-                        setFormData({ ...formData, email: evt.target.value })
-                      }
-                      className="form-control"
-                      placeholder="Email"
-                      required
-                    />
-                  </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
+                <div className="contact__details-form">
+                  <form className="contact__form" onSubmit={handleSubmit}>
+                    <div className="row">
+                      <div className="form-item col-12">
+                        <div className="form-group">
+                          <label htmlFor="name">Name</label>
+                          <input
+                            type="text"
+                            id="name"
+                            value={formData.name}
+                            onChange={(evt) =>
+                              setFormData({
+                                ...formData,
+                                name: evt.target.value,
+                              })
+                            }
+                            placeholder="Your name"
+                            className="form-control"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="form-item col-12">
+                        <div className="form-group">
+                          <label htmlFor="email">Email</label>
+                          <input
+                            type="email"
+                            id="email"
+                            value={formData.email}
+                            onChange={(evt) =>
+                              setFormData({
+                                ...formData,
+                                email: evt.target.value,
+                              })
+                            }
+                            className="form-control"
+                            placeholder="your@email.com"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="form-item col-12">
+                        <div className="form-group">
+                          <label htmlFor="subject">Subject</label>
+                          <input
+                            type="text"
+                            id="subject"
+                            value={formData.subject}
+                            onChange={(evt) =>
+                              setFormData({
+                                ...formData,
+                                subject: evt.target.value,
+                              })
+                            }
+                            className="form-control"
+                            placeholder="Subject of the message"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="form-item col-12">
+                        <div className="form-group">
+                          <label htmlFor="message">Message</label>
+                          <textarea
+                            value={formData.message}
+                            id="message"
+                            onChange={(evt) =>
+                              setFormData({
+                                ...formData,
+                                message: evt.target.value,
+                              })
+                            }
+                            className="form-control"
+                            placeholder="Your message"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="form-item col-12">
+                        <button type="submit" className="submitBtn">
+                          Send Email
+                        </button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-              </div>
-              <div className="row">
-                <div className="form-item col-12">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      value={formData.subject}
-                      onChange={(evt) =>
-                        setFormData({ ...formData, subject: evt.target.value })
-                      }
-                      className="form-control"
-                      placeholder="Subject"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="form-item col-12">
-                  <div className="form-group">
-                    <textarea
-                      value={formData.message}
-                      onChange={(evt) =>
-                        setFormData({ ...formData, message: evt.target.value })
-                      }
-                      className="form-control"
-                      placeholder="Message"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="form-item col-12">
-                  <button type="submit" className="submitBtn">
-                    Send Email
-                  </button>
-                </div>
-              </div>
-            </form>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>

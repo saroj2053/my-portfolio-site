@@ -64,7 +64,7 @@
 
 .resume__description {
   text-align: justify;
-  color: var(--text-black-700);
+  color: var(--text-gray-600);
   font-weight: 500;
 }
 

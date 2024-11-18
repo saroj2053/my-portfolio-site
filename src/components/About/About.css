@@ -1,5 +1,5 @@
 .about {
-  background: var(--bg-black-900);
+  background: var(--bg-secondary);
   padding-top: 7rem;
   transition: var(--bg-transition);
 }
@@ -55,7 +55,7 @@
 
 .about__intro,
 .about__status {
-  color: var(--text-black-700);
+  color: var(--text-gray-600);
   font-size: 1rem;
   font-weight: 500;
   margin: 1rem 0;
@@ -118,7 +118,7 @@
 
 .about__profileSummary {
   font-size: 0.95rem;
-  color: var(--text-black-700);
+  color: var(--text-gray-600);
   margin: 1.5rem 0;
   font-weight: 500;
   display: flex;

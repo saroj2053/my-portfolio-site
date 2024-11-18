@@ -1,5 +1,5 @@
 .footer {
-  background: var(--bg-black-900);
+  background: var(--bg-secondary);
   transition: var(--bg-transition);
 
 }
