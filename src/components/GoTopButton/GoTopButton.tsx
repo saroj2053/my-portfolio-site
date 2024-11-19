@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import "./GoTopButton.css";
 import { FaArrowUp } from "react-icons/fa6";
 
-
 const GoTopButton = () => {
   const goTopBtnRef = useRef<HTMLButtonElement | null>(null);
 
@@ -11,15 +10,26 @@ const GoTopButton = () => {
 
     if (!goTopBtn) return;
 
+    let lastScrollTop = 0;
+
     const handleScroll = () => {
-      if (
-        document.body.scrollTop > 80 ||
-        document.documentElement.scrollTop > 80
-      ) {
+      const scrollTop =
+        document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight;
+      const clientHeight = document.documentElement.clientHeight;
+
+    
+      const isAtBottom = scrollTop + clientHeight >= scrollHeight - 5;
+
+      const isScrollingUp = scrollTop < lastScrollTop;
+
+      if (isAtBottom || isScrollingUp) {
         goTopBtn.classList.add("visible");
       } else {
         goTopBtn.classList.remove("visible");
       }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -40,7 +50,7 @@ const GoTopButton = () => {
         ref={goTopBtnRef}
         onClick={handleBtnClick}
       >
-        <FaArrowUp size={20} style={{color: "#fff"}} />
+        <FaArrowUp size={20} style={{ color: "#fff" }} />
       </button>
     </div>
   );
