@@ -21,9 +21,10 @@ const GoTopButton = () => {
     
       const isAtBottom = scrollTop + clientHeight >= scrollHeight - 5;
 
+      const isAtTop = scrollTop <= 0;
       const isScrollingUp = scrollTop < lastScrollTop;
 
-      if (isAtBottom || isScrollingUp) {
+      if (isAtBottom || (isScrollingUp && !isAtTop)) {
         goTopBtn.classList.add("visible");
       } else {
         goTopBtn.classList.remove("visible");
