@@ -3,8 +3,6 @@ import navData from "./navData";
 import { Link } from "react-scroll";
 import { FaMoon, FaSun } from "react-icons/fa6";
 
-// import brandSvg from "../../assets/portfolio-brand.svg";
-// import profileImg from "../../assets/profile_img.png";
 import { useContext, useState } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext/ThemeProvider";
 import { BiMenu, BiX } from "react-icons/bi";
