@@ -32,7 +32,7 @@ const projects = [
     image: campusflowImage,
     name: "CampusFlow - for Across Universities",
     description:
-      "A web application for ACROSS, facilitating seamless access to universities across nine different countries with features like compare modules, transfer of credits etc.",
+      "A platform to facilitate cross-border universities operations.",
     techUsed: [
       "Python",
       "Django",
@@ -50,7 +50,7 @@ const projects = [
     image: linkedInImage,
     name: "Linkedin Clone",
     description:
-      "A web based application that provides basic features of the well known Linkedin application",
+      "A clone op the Linkedin website with features like user authentication, post creation, and more.",
     techUsed: ["React", "NodeJs", "Raw CSS", "HTML", "MongoDB"],
     githubUrl: "",
     deployedUrl: "",
@@ -60,7 +60,7 @@ const projects = [
     image: solarCalculite1,
     name: "Solar Calculite - a solar pv estimator",
     description:
-      "A MERN stack application for estimating the amount of electricity produced by the photovoltaic products.",
+      "Estimation of power produced by the photovoltaic products.",
     techUsed: [
       "HTML",
       "CSS",
@@ -78,7 +78,7 @@ const projects = [
     image: chatAppImage,
     name: "MERN Chat App",
     description:
-      "Built using the MERN (MongoDB, Express.js, React, Node.js) stack, this intuitive application enables real-time messaging in the textual format.",
+      "A real-time-chat application in textual format with features like user authentication, online status, and more.",
     techUsed: ["Nodejs", "MongoDB", "ReactJS", "Chakra UI", "Zustand"],
     githubUrl: "https://github.com/saroj2053/mern-chat-app",
     deployedUrl: "https://chatapp-t6jh.onrender.com/",
@@ -86,8 +86,8 @@ const projects = [
   {
     id: 6,
     image: movixImage,
-    name: "Movix - a platform to view tmdb movies",
-    description: "Providing users with the platform to seek for tmdb movies",
+    name: "Movix",
+    description: "A platform that uses the TMDB API to showcase movie data.",
     techUsed: ["HTML", "CSS", "React", "NodeJs", "MongoDB", "TMDB API"],
     githubUrl: "https://github.com/saroj2053/movix-frontend",
     deployedUrl: "https://movix2053.netlify.app/",
@@ -97,7 +97,7 @@ const projects = [
     image: rateMyUni,
     name: "Rate My Uni",
     description:
-      "Rate My Uni is a comprehensive platform that allows students to explore and review universities inside Nepal, providing valuable insights into campus life, academic programs, faculty quality, and more.",
+      "Review and rating platform for universities in Nepal",
     techUsed: ["Nodejs", "Express", "MongoDB", "React", "Tailwind CSS"],
     githubUrl: "https://github.com/saroj2053/ratemyuni",
     deployedUrl: "https://ratemyuni-3vzl.onrender.com/",
@@ -107,7 +107,7 @@ const projects = [
     image: stronicsImage,
     name: "Stronics - An electronics retail store",
     description:
-      "A platform that delivers the ultimate experience for shopping all your electronic needs with convenience. This includes the latest in electronics with the highest standards of quality and service tailored for consumers. ",
+      "A basic e-commerce platform for electronics products",
     techUsed: [
       "Nodejs",
       "Express",
@@ -122,8 +122,8 @@ const projects = [
   {
     id: 9,
     image: ezyEatsImage,
-    name: "Ezy Eats. - a mern food ordering app",
-    description: "An ongoing mern food ordering platform ",
+    name: "Ezy Eats.",
+    description: "A food ordering app built using the MERN stack",
     techUsed: [
       "Nodejs",
       "Expressjs",
@@ -143,9 +143,9 @@ const projects = [
   {
     id: 10,
     image: webWizardsImage,
-    name: "Web Wizards - a web development agency",
+    name: "Web Wizards",
     description:
-      "A web development agency that provides services for web development, web design, and digital marketing.",
+      "An agency that provides services for web development, web design, and digital marketing.",
     techUsed: [
       "React",
       "Raw CSS",
