@@ -21,7 +21,7 @@ const Loader: React.FC<LoaderProps> = ({ onCompletion }) => {
         }
         return prev + 1;
       });
-    }, 50);
+    }, 10);
 
     return () => clearInterval(interval);
   }, [isVisible]);
@@ -31,7 +31,7 @@ const Loader: React.FC<LoaderProps> = ({ onCompletion }) => {
       setTimeout(() => {
         setIsVisible(false);
         onCompletion?.();
-      }, 200);
+      }, 100);
     }
   }, [progress, onCompletion]);
 
@@ -49,7 +49,7 @@ const Loader: React.FC<LoaderProps> = ({ onCompletion }) => {
                 className="loader__progress-bar-fill"
                 initial={{ width: 0 }}
                 animate={{ width: `${progress}%` }}
-                transition={{ duration: 0.01, ease: "easeInOut"}}
+                transition={{ duration: 0.001, ease: "easeInOut"}}
               />
             </div>
             

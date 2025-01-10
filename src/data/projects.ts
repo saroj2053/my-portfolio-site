@@ -52,8 +52,8 @@ const projects = [
     description:
       "A clone op the Linkedin website with features like user authentication, post creation, and more.",
     techUsed: ["React", "NodeJs", "Raw CSS", "HTML", "MongoDB"],
-    githubUrl: "",
-    deployedUrl: "",
+    githubUrl: "https://github.com/saroj2053/linkedin-clone-client",
+    deployedUrl: "https://connectin-clone.netlify.app/",
   },
   {
     id: 4,
