@@ -82,7 +82,7 @@ const Home = () => {
             </div>
             <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
 
-            <p style={{marginBottom: "3rem", fontSize: "1.125rem", lineHeight: "1.75rem", color: "var(--text-black-700)", width: "80%", textAlign: "center"}}>
+            <p style={{marginBottom: "1.5rem", fontSize: "1rem", lineHeight: "1.75rem", color: "var(--text-black-700)", width: "80%", textAlign: "center"}}>
               Crafting beautiful and functional web experiences with modern
               technologies. Specialized in React, Node.js, and cloud
               architecture.

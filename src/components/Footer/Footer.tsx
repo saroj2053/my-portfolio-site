@@ -19,7 +19,7 @@ const Footer = () => {
           <p className="footer__desc">
             Copyright &copy;{" "}
             <span id="copyright">{new Date().getFullYear().toString()}</span>{" "}
-            Saroj Sah. All rights reserved
+            Saroj Sah
           </p>
 
           {/* <div className="footer-right">
