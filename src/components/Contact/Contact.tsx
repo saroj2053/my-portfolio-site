@@ -148,7 +148,7 @@ const Contact = () => {
                     <FiPhone className="contact__icons" />
                     <div className="contact__phone-details">
                       <p>Phone</p>
-                      <a href="tel:+4912345678910">+49 1234 567 8910</a>
+                      <a href="tel:+4915752491735">+49-15752491735</a>
                     </div>
                   </div>
                   <div className="contact__links contact__location">

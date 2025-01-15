@@ -8,7 +8,7 @@ import Resume from "../Resume/Resume";
 import GradientDivider from "../GradientDivider/GradientDivider";
 import { technologies } from "../../data/technologies";
 import Pill from "../Pill/Pill";
-import { FaReact, FaNode, FaVuejs, FaBullhorn } from "react-icons/fa6";
+import { FaReact, FaNode, FaBullhorn, FaCss3Alt, } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
@@ -69,6 +69,9 @@ const About = ({ title }: { title: string }) => {
               <Pill text="Available for Work" />
             </div> */}
             <div className="portfolioImage">
+              <img src={portfolioImage} alt="" />
+
+            <div className="spinningIcons">
               <span>
                 <FaReact size={60} />
               </span>
@@ -79,9 +82,9 @@ const About = ({ title }: { title: string }) => {
                 <RiNextjsFill size={80} />
               </span>
               <span>
-                <FaVuejs size={80} />{" "}
+                <  FaCss3Alt size={80} />{" "}
               </span>
-              <img src={portfolioImage} alt="" />
+            </div>
             </div>
           </div>
         </div>
