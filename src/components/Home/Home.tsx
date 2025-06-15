@@ -57,65 +57,78 @@ const Home = () => {
       </div>
 
       <div className="home__contents">
-   
-          <div className="home__myDetails">
-            <div>
-              <TypingEffect />
-            </div>
+        <div className="home__myDetails">
+          <div>
+            <TypingEffect />
+          </div>
 
-            <div className="home__typoEffect">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Full Stack Developer",
-                    "UI Developer",
-                    "Content Writer",
-                    "Student",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </div>
-            <div className="home__image">
-              <img src={homeImage} alt="person with computer" />
-            </div>
-            <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-
-            <p style={{marginBottom: "1.5rem", fontSize: "1rem", lineHeight: "1.75rem", color: "var(--text-black-700)", width: "80%", textAlign: "center"}}>
+          <div className="home__typoEffect">
+            <Typewriter
+              options={{
+                strings: [
+                  "Software Engineer",
+                  "Full Stack Web Developer",
+                  "Content Writer",
+                  "Student",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
+          <div className="home__image">
+            <img src={homeImage} alt="person with computer" />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <p
+              style={{
+                marginBottom: "1.5rem",
+                fontSize: "1rem",
+                lineHeight: "1.75rem",
+                color: "var(--text-black-700)",
+                width: "80%",
+                textAlign: "center",
+              }}
+            >
               Crafting beautiful and functional web experiences with modern
               technologies. Specialized in React, Node.js, and cloud
               architecture.
             </p>
-            </div>
+          </div>
 
-            <div className="swipe-down-btn-container">
-              <Link
-                className="swipe-down-btn"
-                to="projects"
-                spy
-                smooth
-                duration={duration}
-                activeClass="active"
-              >
-                View My Work
-                <span className="icon-wrapper">
-                  <HiMiniArrowDownRight className="arrow-icon" />
-                </span>
-              </Link>
-              <Link
-                className="swipe-down-btn"
-                to="contact"
-                spy
-                smooth
-                duration={duration}
-                activeClass="active"
-              >
-                Contact Me
-              </Link>
-            </div>
+          <div className="swipe-down-btn-container">
+            <Link
+              className="swipe-down-btn"
+              to="projects"
+              spy
+              smooth
+              duration={duration}
+              activeClass="active"
+            >
+              View My Work
+              <span className="icon-wrapper">
+                <HiMiniArrowDownRight className="arrow-icon" />
+              </span>
+            </Link>
+            <Link
+              className="swipe-down-btn"
+              to="contact"
+              spy
+              smooth
+              duration={duration}
+              activeClass="active"
+            >
+              Contact Me
+            </Link>
           </div>
         </div>
+      </div>
       <div
         className={`skin__visibility-toggler ${skinVisibility ? "open" : ""}`}
         onClick={toggleSkinVisibility}
