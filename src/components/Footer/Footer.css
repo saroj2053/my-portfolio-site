@@ -1,7 +1,6 @@
 .footer {
   background: var(--bg-secondary);
   transition: var(--bg-transition);
-
 }
 
 .wavy-background {
@@ -13,7 +12,6 @@
 #wavySvg {
   margin-bottom: -7px;
 }
-
 
 #wavy-svg {
   fill: rgb(var(--skin-color));

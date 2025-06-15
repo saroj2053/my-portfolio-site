@@ -8,8 +8,10 @@ import sarlahiMarktImage from "../assets/project-images/sarlahimarkt-image.png";
 import stronicsImage from "../assets/project-images/stronics-image.png";
 import ezyEatsImage from "../assets/project-images/EzyEats.png";
 import webWizardsImage from "../assets/project-images/webwizards.png";
+import getFlixGPTImage from "../assets/project-images/getflixgpt.png";
+import { Project } from "../types";
 
-const projects = [
+const projects: Project[] = [
   {
     id: 1,
     image: sarlahiMarktImage,
@@ -59,8 +61,7 @@ const projects = [
     id: 4,
     image: solarCalculite1,
     name: "Solar Calculite - a solar pv estimator",
-    description:
-      "Estimation of power produced by the photovoltaic products.",
+    description: "Estimation of power produced by the photovoltaic products.",
     techUsed: [
       "HTML",
       "CSS",
@@ -96,8 +97,7 @@ const projects = [
     id: 7,
     image: rateMyUni,
     name: "Rate My Uni",
-    description:
-      "Review and rating platform for universities in Nepal",
+    description: "Review and rating platform for universities in Nepal",
     techUsed: ["Nodejs", "Express", "MongoDB", "React", "Tailwind CSS"],
     githubUrl: "https://github.com/saroj2053/ratemyuni",
     deployedUrl: "https://ratemyuni-3vzl.onrender.com/",
@@ -106,8 +106,7 @@ const projects = [
     id: 8,
     image: stronicsImage,
     name: "Stronics - An electronics retail store",
-    description:
-      "A basic e-commerce platform for electronics products",
+    description: "A basic e-commerce platform for electronics products",
     techUsed: [
       "Nodejs",
       "Express",
@@ -146,14 +145,28 @@ const projects = [
     name: "Web Wizards",
     description:
       "An agency that provides services for web development, web design, and digital marketing.",
-    techUsed: [
-      "React",
-      "Raw CSS",
-      "EmailJs",
-    ],
+    techUsed: ["React", "Raw CSS", "EmailJs"],
     githubUrl: "https://github.com/saroj2053/web-wizards",
     deployedUrl: "https://web-wizards-team.vercel.app/",
-  }
+  },
+
+  {
+    id: 11,
+    image: getFlixGPTImage,
+    name: "GetFlixGPT",
+    description:
+      "A movie recommendation system that uses MistralAI to provide personalized movie suggestions.",
+    techUsed: [
+      "React",
+      "TMDB API",
+      "MistralAI",
+      "TailwindCSS",
+      "React Redux",
+      "Firebase",
+    ],
+    githubUrl: "https://github.com/saroj2053/gateflix-GPT",
+    deployedUrl: "https://getflixgpt-18c35.web.app/",
+  },
 ];
 
 export default projects;
