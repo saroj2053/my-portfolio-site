@@ -6,6 +6,7 @@ const Resume = () => {
       <div className="resume__container">
         <div className="resume__data">
           <h3 className="resume__title text-lg">EDUCATION</h3>
+
           <div className="resume__item">
             <h2 className="resume-education__title text-lg">
               TECHNICAL UNIVERSITY OF CHEMNITZ

@@ -8,9 +8,9 @@ import Resume from "../Resume/Resume";
 import GradientDivider from "../GradientDivider/GradientDivider";
 import { technologies } from "../../data/technologies";
 import Pill from "../Pill/Pill";
-import { FaReact, FaNode, FaBullhorn, FaCss3Alt, } from "react-icons/fa6";
-import { RiNextjsFill } from "react-icons/ri";
+import { FaReact, FaNode, FaBullhorn, FaCss3Alt } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { BiLogoSpringBoot } from "react-icons/bi";
 
 const About = ({ title }: { title: string }) => {
   return (
@@ -71,20 +71,20 @@ const About = ({ title }: { title: string }) => {
             <div className="portfolioImage">
               <img src={portfolioImage} alt="" />
 
-            <div className="spinningIcons">
-              <span>
-                <FaReact size={60} />
-              </span>
-              <span>
-                <FaNode size={80} />
-              </span>
-              <span>
-                <RiNextjsFill size={80} />
-              </span>
-              <span>
-                <  FaCss3Alt size={80} />{" "}
-              </span>
-            </div>
+              <div className="spinningIcons">
+                <span>
+                  <FaReact size={60} />
+                </span>
+                <span>
+                  <FaNode size={80} />
+                </span>
+                <span>
+                  <BiLogoSpringBoot size={80} />
+                </span>
+                <span>
+                  <FaCss3Alt size={80} />{" "}
+                </span>
+              </div>
             </div>
           </div>
         </div>

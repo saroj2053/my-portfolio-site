@@ -1,14 +1,13 @@
-import { TbBrandVite, TbBrandReactNative, TbBrandVscode } from "react-icons/tb";
+import { TbBrandVite, TbBrandVscode } from "react-icons/tb";
 
 import {
   BiLogoJavascript,
-  BiLogoNetlify,
   BiLogoPostgresql,
   BiLogoTailwindCss,
   BiLogoMongodb,
 } from "react-icons/bi";
 
-import { SiChakraui, SiShadcnui } from "react-icons/si";
+import { SiChakraui, SiShadcnui, SiSpringboot } from "react-icons/si";
 
 import {
   FaPython,
@@ -19,6 +18,7 @@ import {
   FaGitAlt,
   FaJava,
   FaCss3Alt,
+  FaDocker,
 } from "react-icons/fa6";
 
 import { IconType } from "react-icons";
@@ -54,8 +54,8 @@ export const technologies = [
     icon: FaReact as IconType,
   },
   {
-    title: "React Native",
-    icon: TbBrandReactNative as IconType,
+    title: "Spring Boot",
+    icon: SiSpringboot as IconType,
   },
   {
     title: "Python",
@@ -74,8 +74,8 @@ export const technologies = [
     icon: TbBrandVite as IconType,
   },
   {
-    title: "Netlify",
-    icon: BiLogoNetlify as IconType,
+    title: "Docker",
+    icon: FaDocker as IconType,
   },
   {
     title: "Chakra UI",
