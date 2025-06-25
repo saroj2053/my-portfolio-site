@@ -1,4 +1,4 @@
-import { TbBrandVite, TbBrandVscode } from "react-icons/tb";
+import { TbBrandVscode } from "react-icons/tb";
 
 import {
   BiLogoJavascript,
@@ -7,11 +7,16 @@ import {
   BiLogoMongodb,
 } from "react-icons/bi";
 
-import { SiChakraui, SiShadcnui, SiSpringboot } from "react-icons/si";
+import {
+  SiChakraui,
+  SiIntellijidea,
+  SiPostman,
+  SiSpringboot,
+  SiWebstorm,
+} from "react-icons/si";
 
 import {
   FaPython,
-  FaSass,
   FaHtml5,
   FaNodeJs,
   FaReact,
@@ -32,11 +37,6 @@ export const technologies = [
     title: "CSS3",
     icon: FaCss3Alt as IconType,
   },
-  {
-    title: "SASS",
-    icon: FaSass as IconType,
-  },
-  { title: "shadcn/ui", icon: SiShadcnui as IconType },
   {
     title: "Javascript",
     icon: BiLogoJavascript as IconType,
@@ -70,10 +70,6 @@ export const technologies = [
     icon: BiLogoMongodb as IconType,
   },
   {
-    title: "Vite",
-    icon: TbBrandVite as IconType,
-  },
-  {
     title: "Docker",
     icon: FaDocker as IconType,
   },
@@ -92,5 +88,17 @@ export const technologies = [
   {
     title: "VS Code",
     icon: TbBrandVscode as IconType,
+  },
+  {
+    title: "IntelliJ IDEA",
+    icon: SiIntellijidea as IconType,
+  },
+  {
+    title: "Web Storm",
+    icon: SiWebstorm as IconType,
+  },
+  {
+    title: "Postman",
+    icon: SiPostman as IconType,
   },
 ];

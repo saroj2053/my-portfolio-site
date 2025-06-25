@@ -59,7 +59,6 @@
   justify-content: center;
   align-items: center;
   padding: 4rem 0;
-  
 }
 
 .animate-fade-out {
@@ -75,7 +74,6 @@
   line-height: 75px;
 }
 
-
 .home__profileName {
   font-size: calc(32px + 0.8vw);
   font-weight: 600;
@@ -83,7 +81,6 @@
   margin: 0.75rem 0;
   color: rgb(var(--skin-color));
 }
-
 
 .home__typoEffect {
   display: flex;
@@ -106,7 +103,6 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
-
 }
 
 .home__profileStatus span {
@@ -115,7 +111,7 @@
 
 .home__image {
   margin: 2rem 0;
-  height: 230px;
+  height: 205px;
   display: flex;
   justify-content: center;
   align-items: center;

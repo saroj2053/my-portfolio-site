@@ -68,8 +68,7 @@ const Home = () => {
                 strings: [
                   "Software Engineer",
                   "Full Stack Web Developer",
-                  "Content Writer",
-                  "Student",
+                  "Web Engineering Student",
                 ],
                 autoStart: true,
                 loop: true,
@@ -92,13 +91,14 @@ const Home = () => {
                 fontSize: "1rem",
                 lineHeight: "1.75rem",
                 color: "var(--text-black-700)",
-                width: "80%",
+                width: "100%",
                 textAlign: "center",
               }}
             >
               Crafting beautiful and functional web experiences with modern
-              technologies. Specialized in React, Node.js, and cloud
-              architecture.
+              technologies. <br />
+              Specialized in Javascript, Java, Node.js, Spring Boot, React, and
+              cloud technologies.
             </p>
           </div>
 
