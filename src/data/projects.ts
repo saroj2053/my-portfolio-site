@@ -9,6 +9,7 @@ import stronicsImage from "../assets/project-images/stronics-image.png";
 import ezyEatsImage from "../assets/project-images/EzyEats.png";
 import webWizardsImage from "../assets/project-images/webwizards.png";
 import getFlixGPTImage from "../assets/project-images/getflixgpt.png";
+import nepalUniReviewsImage from "../assets/project-images/nepal-uni-reviews-image.png";
 import { Project } from "../types";
 
 const projects: Project[] = [
@@ -166,6 +167,23 @@ const projects: Project[] = [
     ],
     githubUrl: "https://github.com/saroj2053/gateflix-GPT",
     deployedUrl: "https://getflixgpt-18c35.web.app/",
+  },
+  {
+    id: 12,
+    image: nepalUniReviewsImage,
+    name: "Nepal Uni Reviews",
+    description:
+      "A second version of Rate My Uni, a review and rating platform for universities in Nepal.",
+    techUsed: [
+      "Spring Boot",
+      "Java",
+      "MongoDB",
+      "React",
+      "Tailwind CSS",
+      "Chakra UI",
+    ],
+    githubUrl: "https://github.com/saroj2053/ratemyuni-v2",
+    deployedUrl: "https://ratemyuni-v2-cuq4.vercel.app/",
   },
 ];
 
