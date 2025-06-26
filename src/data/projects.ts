@@ -10,6 +10,7 @@ import ezyEatsImage from "../assets/project-images/EzyEats.png";
 import webWizardsImage from "../assets/project-images/webwizards.png";
 import getFlixGPTImage from "../assets/project-images/getflixgpt.png";
 import nepalUniReviewsImage from "../assets/project-images/nepal-uni-reviews-image.png";
+import brightFutureAcademyImage from "../assets/project-images/bright-future-academy-image.png";
 import { Project } from "../types";
 
 const projects: Project[] = [
@@ -184,6 +185,23 @@ const projects: Project[] = [
     ],
     githubUrl: "https://github.com/saroj2053/ratemyuni-v2",
     deployedUrl: "https://ratemyuni-v2-cuq4.vercel.app/",
+  },
+  {
+    id: 13,
+    image: brightFutureAcademyImage,
+    name: "Bright Future Academy",
+    description:
+      "A platform for students to learn and grow with various courses and resources.",
+    techUsed: [
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Thymeleaf",
+      "Bootstrap UI",
+      "MySQL",
+    ],
+    githubUrl: "https://github.com/saroj2053/school-management-system",
+    deployedUrl: "https://bright-future-academy-ut5s.onrender.com/",
   },
 ];
 
