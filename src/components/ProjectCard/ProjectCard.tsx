@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: project.id * 0.2 }}
+      transition={{ delay: project.id * 0.075 }}
       className="projectCard"
     >
       <div className="projectCard__image">

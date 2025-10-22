@@ -17,10 +17,10 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (evt: any) => {
+  const handleSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
 
-    const serviceId = "service_3tm8c45";
+    const serviceId = "service_8c3p1iq";
     const templateId = "template_ajyhcpi";
     const publicKey = "uV3e4sbtIIM3oFHbB";
 
@@ -35,9 +35,9 @@ const Contact = () => {
 
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
-      .then((response: any) => {
+      .then((response: unknown) => {
         console.log(response);
-        response.status === 200 &&
+        (response as { status: number }).status === 200 &&
           toast(
             "🙏 Thank you for sending me email! I will reach back to you shortly",
             {
@@ -55,7 +55,7 @@ const Contact = () => {
 
         setFormData({ name: "", email: "", subject: "", message: "" });
       })
-      .catch((error: any) => {
+      .catch((error: unknown) => {
         toast.error(`Error sending email ${error}`);
       });
   };

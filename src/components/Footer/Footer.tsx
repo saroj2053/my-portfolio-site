@@ -7,7 +7,11 @@ const Footer = () => {
     <>
       <div className="footer">
         <div className="wavy-background">
-          <svg id="wavySvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <svg
+            id="wavySvg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+          >
             <path
               id="wavy-svg"
               fill="#0099ff"
@@ -15,29 +19,11 @@ const Footer = () => {
               d="M0,64L60,58.7C120,53,240,43,360,80C480,117,600,203,720,208C840,213,960,139,1080,101.3C1200,64,1320,64,1380,64L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
             ></path>
           </svg>
-
           <p className="footer__desc">
             Copyright &copy;{" "}
             <span id="copyright">{new Date().getFullYear().toString()}</span>{" "}
-            Saroj Sah
+            Saroj Sah. All Rights Reserved.
           </p>
-
-          {/* <div className="footer-right">
-              <ul className="iconWrapper">
-                {links.map((link, index) => (
-                  <li
-                    key={index}
-                    className="icon"
-                    id={link.name.toLocaleLowerCase()}
-                  >
-                    <a href={link.url} target="_blank">
-                      <span className="tooltip">{link.name}</span>
-                      <span className="svgIcon">{link.icon({ size: 20 })}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div> */}
         </div>
       </div>
     </>
