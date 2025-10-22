@@ -23,8 +23,8 @@ export const resumeEducationData: ResumeEducationSection[] = [
 
 export const resumeEmploymentData: ResumeEmploymentSection[] = [
   {
-    title: "Software Engineer Intern",
-    subtitle: "Check24 GmbH",
+    title: "SOFTWARE ENGINEER INTERN",
+    subtitle: "CHECK24 GmbH",
     date: "08/2025 - 09/2025",
     description:
       "Technology Stack: Java, Spring Boot, React.js, Angular, Thymeleaf, Bitbucket, Jenkins, WireMock, Git, Vault, Jira",
