@@ -26,6 +26,7 @@ body {
   font-size: 16px;
   transition: color 2s ease;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body.theme-dark {
@@ -78,11 +79,15 @@ body.skin8 {
 
 #author__name {
   margin-bottom: 1.5rem;
-  font-size: calc(2.5rem + 0.8vw);
+  font-size: calc(2rem + 0.8vw);
   text-align: center;
   line-height: 1.5rem;
   font-weight: 700;
   color: rgb(var(--skin-color));
+}
+
+body:has(.modal-overlay) {
+  overflow: hidden;
 }
 
 body {

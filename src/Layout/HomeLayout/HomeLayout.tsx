@@ -1,4 +1,5 @@
 import About from "../../components/About/About";
+import Certificate from "../../components/Certificate/Certificate";
 import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 import GoTopButton from "../../components/GoTopButton/GoTopButton";
@@ -13,6 +14,7 @@ const HomeLayout = () => {
       <Home />
       <About title="About Me" />
       <Project />
+      <Certificate />
       <Contact />
       <Footer />
       <GoTopButton />

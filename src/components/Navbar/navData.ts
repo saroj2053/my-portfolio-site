@@ -1,4 +1,4 @@
-const navData  = [
+const navData = [
   {
     name: "Home",
     href: "home",
@@ -11,15 +11,14 @@ const navData  = [
     name: "Projects",
     href: "projects",
   },
-  // {
-  //   name: "Blog",
-  //   href: "blogs",
-  // },
+  {
+    name: "Certificates",
+    href: "certificates",
+  },
   {
     name: "Contact",
     href: "contact",
   },
-  
 ];
 
 export default navData;

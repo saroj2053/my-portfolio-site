@@ -1,0 +1,84 @@
+.certificate-section {
+  background: var(--bg-primary);
+  padding-top: 6rem;
+  transition: var(--bg-transition);
+}
+
+.certificate-section__header {
+  flex: 0 0 100%;
+  max-width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.certificate-section__header h2 {
+  font-size: 40px;
+  color: var(--text-black-900);
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.certificate-section__header h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  top: 100%;
+  left: 0;
+  background: rgb(var(--skin-color));
+  border-radius: 5px;
+}
+
+.certificate-section__header h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  background: rgb(var(--skin-color));
+  border-radius: 5px;
+}
+
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.cert-button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(var(--skin-color));
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cert-button:hover {
+  transform: scale(0.95);
+}
+
+.certificate-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  font-family: "Outfit", sans-serif;
+  color: var(--text-black-900);
+}
+
+.certificate-issuer {
+  font-size: 0.875rem;
+  color: var(--text-black-700);
+  font-family: "Outfit", sans-serif;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
