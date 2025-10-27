@@ -136,13 +136,11 @@
   margin: 0 auto;
 }
 
-
 .contact__cards {
   display: grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
 }
-
 
 .contact__card {
   background: var(--bg-card);
@@ -162,24 +160,31 @@
 .contact__links {
   display: flex;
   gap: 1rem;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
-.contact__phone, .contact__email, .contact__location {
+.contact__phone,
+.contact__email,
+.contact__location {
   margin: 1.5rem 0;
 }
 
-.contact__location-details p:nth-child(1), .contact__email-details p:nth-child(1), .contact__phone-details p:nth-child(1) {
+.contact__location-details p:nth-child(1),
+.contact__email-details p:nth-child(1),
+.contact__phone-details p:nth-child(1) {
   font-weight: 500;
   color: var(--text-black-900);
 }
 
-.contact__location-details p:nth-child(2), .contact__email-details > a, .contact__phone-details > a {
+.contact__location-details p:nth-child(2),
+.contact__email-details > a,
+.contact__phone-details > a {
   color: var(--text-gray-600);
   font-size: 0.875rem;
 }
 
-.contact__email-details > a, .contact__phone-details > a {
+.contact__email-details > a,
+.contact__phone-details > a {
   text-decoration: none;
   color: var(--text-gray-600);
   cursor: pointer;
@@ -203,7 +208,6 @@
 input[type="email"],
 input[type="text"]:first-of-type {
   width: 92%;
- 
 }
 .contact .contact__form .row {
   display: flex;
@@ -231,11 +235,9 @@ input[type="text"]:first-of-type {
   margin-bottom: 0;
 }
 
-
-
 .contact .contact__form .form-item .form-control {
   width: 100%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: rgba(rgb(var(--skin-color)), 0.8);
   outline: none;
   border: 1px solid var(--bg-black-50);
@@ -261,18 +263,19 @@ input[type="text"]:first-of-type {
   background: transparent;
   border: none;
   outline: none;
-  color: #fff;
-  background: rgb(var(--skin-color));
+  color: rgb(var(--skin-color));
+  background: rgb(var(--skin-color), 0.09);
   font-size: calc(0.875rem + 0.2vw);
-  font-weight: 600;
+  font-weight: 400;
   font-family: inherit;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background 0.2s ease-in-out;
+  transition: background 0.3s ease-in-out transform 0.5s ease-in-out;
 }
 
 .contact__form .submitBtn:hover {
-  background: rgba(var(--skin-color), 0.8);
+  background: rgba(var(--skin-color), 0.2);
+  transform: scale(0.97);
 }
 
 @media screen and (max-width: 768px) {
@@ -301,7 +304,7 @@ input[type="text"]:first-of-type {
     width: 100%;
   }
 
-  .contact__cards  {
+  .contact__cards {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }

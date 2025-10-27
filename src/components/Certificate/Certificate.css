@@ -56,10 +56,9 @@
   padding: 10px 15px;
   font-size: 16px;
   cursor: pointer;
-  background-color: rgb(var(--skin-color));
-  color: white;
+  background-color: rgba(var(--skin-color), 0.09);
   border: none;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -72,12 +71,12 @@
   font-weight: 600;
   margin-top: 1rem;
   font-family: "Outfit", sans-serif;
-  color: var(--text-black-900);
+  color: rgb(var(--skin-color));
 }
 
 .certificate-issuer {
   font-size: 0.875rem;
-  color: var(--text-black-700);
+  color: rgb(var(--skin-color));
   font-family: "Outfit", sans-serif;
   padding-top: 0.5rem;
   margin-bottom: 1rem;

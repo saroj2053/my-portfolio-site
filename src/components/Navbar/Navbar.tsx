@@ -14,7 +14,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const isMobile = useMediaQuery({ maxWidth: "950px" });
+  const isMobile = useMediaQuery({ maxWidth: "1024px" });
 
   const handleNavClick = () => {
     setIsNavOpen(!isNavOpen);
@@ -33,7 +33,9 @@ const Navbar = () => {
           <div className="nav">
             <div className="navbar__left">
               <Link to="/" className="nav__brand" aria-label="Go home">
-                <h1 className="nav__brand-title">&lt;<span className="author__name">Saroj</span> /&gt;</h1>
+                <h1 className="nav__brand-title">
+                  &lt;<span className="author__name">Saroj</span> /&gt;
+                </h1>
               </Link>
             </div>
             <div className={`navbar__middle ${isNavOpen ? "open" : ""}`}>
