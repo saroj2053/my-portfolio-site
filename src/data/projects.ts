@@ -11,6 +11,7 @@ import webWizardsImage from "../assets/project-images/webwizards.png";
 import getFlixGPTImage from "../assets/project-images/getflixgpt.png";
 import nepalUniReviewsImage from "../assets/project-images/nepal-uni-reviews-image.png";
 import brightFutureAcademyImage from "../assets/project-images/bright-future-academy-image.png";
+import lightMaterialDashboardReactImage from "../assets/project-images/light-material-dashboard-react.png";
 import { Project } from "../types";
 
 const projects: Project[] = [
@@ -48,6 +49,16 @@ const projects: Project[] = [
     ],
     githubUrl: "",
     deployedUrl: "https://campusflow-frontend-navy.vercel.app/",
+  },
+  {
+    id: 3,
+    image: lightMaterialDashboardReactImage,
+    name: "Light Material Dashboard React",
+    description:
+      "A free Material-UI Admin with a fresh, new design inspired by Google's Material Design.",
+    techUsed: ["React", "Material UI", "React Router"],
+    githubUrl: "https://github.com/saroj2053/light-material-dashboard-react",
+    deployedUrl: "https://light-material-dashboard-react.vercel.app/",
   },
   {
     id: 3,
